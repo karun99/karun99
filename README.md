@@ -80,18 +80,25 @@ Paper → SRS → Modules → UX → SDLC
 
 ---
 
-## 🛠️ Prototype Collection
-
-I maintain a monorepo of production-grade prototypes — each one a complete, deployable application:
+## 🛠️ Projects
 
 | Project | Description | Stack | Status |
 |---------|-------------|-------|--------|
-| [**AI Studio**](https://github.com/karun99/proto-collection/tree/main/aistudio) | AI video generation, stock images, usage analytics, NSFW moderation | Next.js 16, React 19, FastAPI | ✅ Active |
-| [**BlogBot**](https://github.com/karun99/proto-collection/tree/main/blogbot) | Automated AI blog generation — WordPress plugin + cloud web app | PHP, Node.js, Express, Docker | ✅ Active |
-| [**Prompt Code**](https://github.com/karun99/proto-collection/tree/main/prompt-code) | Prompt engineering challenge platform with AI evaluation | Node.js, Express, Netlify | ✅ Active |
-| [**Tut Hub**](https://github.com/karun99/proto-collection/tree/main/tut-hub) | Tutor & learning management platform | React 19, Supabase, Netlify | ✅ Active |
-| [**Study Buddy**](https://github.com/karun99/proto-collection/tree/main/study-buddy-next) | AI study companion with gamified learning | Next.js 16, Tailwind CSS | ✅ Active |
-| [**You AI Engine**](https://github.com/karun99/proto-collection/tree/main/you-ai-engine) | AI backend engine with auth, projects, content generation | TypeScript, Express | ✅ Active |
+| [**AI Studio**](https://github.com/karun99/aistudio) | AI video generation, stock images, usage analytics | Next.js, React, FastAPI | ✅ Active |
+| [**BlogBot**](https://github.com/karun99/blogbot) | Automated AI blog generation — WordPress plugin + cloud web app | PHP, Node.js, Express, Docker | ✅ Active |
+| [**Prompt Code**](https://github.com/karun99/prompt-code) | Prompt engineering challenge platform with AI evaluation | Node.js, Express, Netlify | ✅ Active |
+| [**Tut Hub**](https://github.com/karun99/tut-hub) | Tutor & learning management platform | React, Supabase, Netlify | ✅ Active |
+| [**Study Buddy**](https://github.com/karun99/study-buddy-next) | AI study companion with gamified learning | Next.js, Tailwind CSS | ✅ Active |
+| [**You AI Engine**](https://github.com/karun99/you-ai-engine) | AI backend engine with auth, projects, content generation | TypeScript, Express | ✅ Active |
+| [**HelixDB**](https://github.com/karun99/HelixDB) | Database project | Backend | ✅ Active |
+| [**SWOTIFY**](https://github.com/karun99/SWOTIFY) | Full-stack web application | Backend, Frontend | ✅ Active |
+| [**AnvayaOS**](https://github.com/karun99/AnvayaOS) | Custom Linux distribution | Docker, Shell | ✅ Active |
+| [**Security**](https://github.com/karun99/security) | Security definitions, incidents, and mitigations | YAML, Python | ✅ Active |
+| [**Portfolio**](https://github.com/karun99/portfolio) | Personal portfolio website | HTML | ✅ Active |
+| [**Demo**](https://github.com/karun99/demo) | Demo application | React, Vite | ✅ Active |
+| [**GKAcad**](https://github.com/karun99/gkacad) | Education platform | HTML, JavaScript | ✅ Active |
+| [**Main App**](https://github.com/karun99/main_app) | Chess application | HTML, JavaScript | ✅ Active |
+| [**YouSwarm**](https://github.com/karun99/YouSwarm-FullStack) | Full-stack swarm application | Netlify, JavaScript | ✅ Active |
 
 ---
 
