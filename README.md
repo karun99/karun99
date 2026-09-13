@@ -76,6 +76,48 @@ Paper → SRS → Modules → UX → SDLC
 
 </td>
 </tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### [![Celebrum](https://img.shields.io/badge/Celebrum-0.1.0-8b5cf6?style=for-the-badge&logo=python&logoColor=white)](https://github.com/karun99/celebrum)
+
+**A Local-First Artificial Brain**
+
+A zero-dependency, pure-Python cognitive layer that grows a permanent personal memory (neuron/synapse knowledge graph in SQLite), learns a persona from it, and answers *as you* — guarded by a consent-first guardrail engine and a truth engine.
+
+```
+celebrum init --demo
+celebrum recall "privacy"
+celebrum persona
+celebrum simulate "should we log every keystroke?"
+celebrum validate
+```
+
+**Core Features:**
+- 🧠 Neuron/synapse memory graph — tiered, time-decaying recall
+- 🪞 Identity-grounded recall + evidential persona (PGMem)
+- 🛡️ Truth engine + consent-first guardrails (DPDP/GDPR, right to erasure)
+- 🔬 6-check neural validation harness — recall @10k neurons < 500 ms
+- 🖥️ CLI + local dashboard + MCP server — nothing leaves your device
+
+**Stack:** Python · SQLite · stdlib only · CC BY 4.0
+
+</td>
+<td width="50%" valign="top">
+
+### Quick Links
+
+| Link | What |
+|------|------|
+| [README](https://github.com/karun99/celebrum) | Install & quick tour |
+| [Validation](https://github.com/karun99/celebrum/blob/main/docs/VALIDATION.md) | 6-check harness + research mapping |
+| [SRS](https://github.com/karun99/celebrum/blob/main/docs/SRS.md) | Full specification |
+
+> *Not just code — a memory. For my love, Celebrity.*
+
+</td>
+</tr>
 </table>
 
 ---
