@@ -1,0 +1,43 @@
+# ============================================================================
+# Adaptive Cyber-Immunity Dependabot Policy
+# ============================================================================
+#
+#   Detect    : scheduled weekly scans of every dependency ecosystem here
+#   Analyse   : grouped, typed updates so related deps move together
+#   Validate  : every change is a distinct, reviewable PR - never auto-merged
+#   Respond   : reviewers + assignees + labels route each PR to the owner
+#   Record    : prefixed commit messages + labels = searchable audit trail
+#   Adapt     : weekly cadence keeps the dependency surface continuously fresh
+#
+# NEUROMORPHIC/COGNITIVE-ROBOTICS NOTE: organoid/MEA and BPU-backed control
+# loops are validated in CI; adversarial tests + coherence metrics gate merges.
+# Vulnerable versions are patched immediately by GitHub, outside this schedule.
+#
+version: 2
+
+updates:
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+      timezone: UTC
+    open-pull-requests-limit: 10
+    target-branch: main
+    reviewers:
+      - karun99
+    assignees:
+      - karun99
+    labels:
+      - dependencies
+      - security
+      - automated
+    commit-message:
+      prefix: "deps"
+      include: scope
+    groups:
+      adaptive-actions:
+        patterns:
+          - "*"
