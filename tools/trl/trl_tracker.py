@@ -280,31 +280,29 @@ def render_table(results: list[dict]) -> str:
 
 
 def table_block(results: list[dict]) -> str:
+    now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    head = (f"_Last updated: {now} · recomputed automatically every 6 hours by the "
+            f"[TRL Tracker action](.github/workflows/trl-tracker.yml)._\n")
     body = render_table(results)
     footer = ("<sub>Efficiency 0–100 = live-weighted validation score. "
               "Docs & license · code/entry-point maturity · CI/CD, releases, Docker "
               "& live deployment · automated tests & green CI · stars, forks, contributors & age.</sub>")
-    return f"<!-- TRL-TABLE -->\n{body}\n\n{footer}\n<!-- /TRL-TABLE -->"
+    return f"<!-- TRL-TABLE -->\n{head}{body}\n\n{footer}\n<!-- /TRL-TABLE -->"
 
 
 def update_readme(results: list[dict]) -> bool:
     if not os.path.exists(README):
         return False
     text = open(README, encoding="utf-8").read()
-    now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     block = table_block(results)
     orig = text
+
+    if "\n<!-- TRL-TIMESTAMP -->\n" in text:
+        text = text.replace("\n<!-- TRL-TIMESTAMP -->\n", "\n", 1)
 
     start_marker, end_marker = "<!-- TRL-TABLE -->", "<!-- /TRL-TABLE -->"
     if start_marker in text and end_marker in text:
         text = text[:text.index(start_marker)] + block + text[text.index(end_marker) + len(end_marker):]
-    else:
-        return False
-
-    ts_marker = "<!-- TRL-TIMESTAMP -->"
-    if ts_marker in text:
-        text = text.replace(ts_marker, f"_Last updated: {now} · auto-recomputed by the "
-                                        f"[TRL Tracker action](.github/workflows/trl-tracker.yml)._")
 
     if text != orig:
         open(README, "w", encoding="utf-8").write(text)
