@@ -27,26 +27,29 @@ I design and build **autonomous AI systems** — from multi-agent swarms that co
 <tr>
 <td width="50%" valign="top">
 
-### [![S-AI](https://img.shields.io/badge/S--AI-v6.0-6366f1?style=for-the-badge&logo=node.js&logoColor=white)](https://github.com/karun99/s-ai)
+### [![S-AI](https://img.shields.io/badge/S--AI-v6.1-6366f1?style=for-the-badge&logo=node.js&logoColor=white)](https://github.com/karun99/s-ai-update)
 
-**Multi-Agent Swarm Intelligence with Execution Layer**
+**Artificial Mind · Integrated OpenWorker**
 
-A CLI-first autonomous AI system with 7 collaborating agents, policy-gated tool execution, and 20+ AI provider support.
+A self-hosted, intelligence-first AI coworker that reasons across a multi-agent swarm, thinks *and* acts through a policy-gated execution layer, and ships with desktop installers, scheduled jobs, reach channels, a credentials vault, and simulated-organoid intelligence (SOI).
 
 ```
 s-ai ask "Should we migrate to microservices?"
-s-ai plan "Refactor the auth module"
-s-ai execute plan.json
-s-ai daemon start
+openworker run "Refactor the auth module"
+openworker jobs            # scheduled automations
+openworker vault           # encrypted credentials
+s-ai daemon                # resident worker service
 ```
 
 **Core Features:**
 - 🤖 7-agent swarm (Orchestrator → Researcher → Analyst → Critic → Synthesizer → Action Planner → Executor)
 - ⚡ Execution Engine with risk-rated approval gates
-- 🧠 Knowledge graph persistence
-- 🔌 MCP server + client integration
+- 🛡️ Security hardening — SSRF protection, filesystem & shell sandboxing, bearer-token auth, rate limiting
+- 🧠 Integrated OpenWorker harness (daemon, jobs, reach, vault, policy)
+- 🔬 Simulated Organoid Intelligence (SOI) for memory consolidation
+- 🧠 Knowledge graph persistence + neural persona (Digital Twin) adaptation
+- 🔌 MCP server + client integration (incl. MCP Builder & Skill Creator)
 - 🌐 20+ AI providers (OpenRouter, OpenAI, Anthropic, Ollama, etc.)
-- 📊 Neural mapping for persona adaptation
 
 **Stack:** TypeScript · Node.js · ESM · MIT License
 
@@ -122,6 +125,48 @@ celebrum validate
 
 ---
 
+## 🛰️ TRL Tracker — Live Project Maturity & Efficiency
+
+Every project is continuously assessed on a **9-level Technology Readiness Level (TRL)** scale by the [TRL Tracker action](.github/workflows/trl-tracker.yml). Scores are recomputed automatically from **live repository signals** — CI status, automated tests, releases, Docker, live deployments, adoption and activity — so each badge reflects real-time validation and efficiency.
+
+| Level | Stage | Evidence |
+|:---:|---|---|
+| **TRL 9** | 🌍 Operational / Real-World Validation | Proven in production with active adoption & issue responsiveness |
+| **TRL 8** | 🚀 Complete, Tested System | Fully qualified, hardened & release-ready |
+| **TRL 7** | 🏭 Realistic Environment Demo | Demonstrated in realistic deployments (containers, CI/CD, live) |
+| **TRL 6** | ✅ Validated Working System | Automated validation & tests passing |
+| **TRL 5** | 🔗 Integrated Prototype | Components integrated into a runnable whole |
+| **TRL 4** | 🧩 Core Components Implemented | Essential building blocks in place |
+| **TRL 3** | 🧪 Proof of Concept | Feasibility demonstrated in code |
+| **TRL 2** | 🧠 Idea / Concept | Approach, feasibility & design documented |
+| **TRL 1** | 🔬 Title | Problem statement & repository established |
+
+_Rows below are generated and **updated automatically every 6 hours** — badges, efficiency and signals evolve as repositories mature._
+
+_Last updated: 2026-09-23 04:26 UTC · auto-recomputed by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
+
+### Live project readiness
+
+<!-- TRL-TABLE -->
+| Project | TRL Level | Efficiency | Live Signals |
+|---------|-----------|------------|--------------|
+| 🔗 [**celebrum**](https://github.com/karun99/celebrum) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `58/100` `██████░░░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🔗 [**Collabuild**](https://github.com/karun99/Collabuild) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `58/100` `██████░░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🔗 [**s-ai-update**](https://github.com/karun99/s-ai-update) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `57/100` `██████░░░░` | ❌ CI · 🧪 Tests · 🐳 Docker · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
+| 🧪 [**ai-content-studio**](https://github.com/karun99/ai-content-studio) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `44/100` `████░░░░░░` | ✅ CI · 🐳 Docker · ⚡ Active |
+| 🧪 [**buildbot**](https://github.com/karun99/buildbot) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `41/100` `████░░░░░░` | ✅ CI · 🐳 Docker · ⚡ Active |
+| 🧪 [**HelixDB**](https://github.com/karun99/HelixDB) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `41/100` `████░░░░░░` | ✅ CI · 🐳 Docker · ⚡ Active |
+| 🧪 [**samvit**](https://github.com/karun99/samvit) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `37/100` `████░░░░░░` | 🧪 Tests · 🐳 Docker · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🧪 [**CodeQuest**](https://github.com/karun99/CodeQuest) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `36/100` `████░░░░░░` | ❌ CI · 🐳 Docker · 🛡️ License · ⚡ Active |
+| 🧪 [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `36/100` `████░░░░░░` | 🐳 Docker · ⚡ Active |
+| 🧪 [**health-quest**](https://github.com/karun99/health-quest) | ![TRL 3: Proof of Concept](https://img.shields.io/badge/TRL%203-Proof%20of%20Concept-f97316?style=flat-square) | `32/100` `███░░░░░░░` | 🐳 Docker · 🌐 Demo · 🛡️ License · ⚡ Active |
+| 🧪 [**arthai**](https://github.com/karun99/arthai) | ![TRL 3: Proof of Concept](https://img.shields.io/badge/TRL%203-Proof%20of%20Concept-f97316?style=flat-square) | `30/100` `███░░░░░░░` | ❌ CI · 🐳 Docker · 🌐 Demo · 🛡️ License · ⚡ Active |
+
+<sub>Efficiency 0–100 = live-weighted validation score. Docs & license · code/entry-point maturity · CI/CD, releases, Docker & live deployment · automated tests & green CI · stars, forks, contributors & age.</sub>
+<!-- /TRL-TABLE -->
+
+---
+
 ## 🛠️ Projects
 
 | Project | Description | Stack | Status |
@@ -194,7 +239,7 @@ celebrum validate
 
 ## 🎯 Current Focus
 
-Building **S-AI v6.0** — evolving from a reasoning engine into a full-fledged autonomous assistant. The swarm now thinks *and* acts, producing execution plans that go through policy-gated approval before any tool is invoked.
+Building **S-AI v6.1** — a production-hardened **Artificial Mind** that runs as an **Integrated OpenWorker**. The swarm thinks *and* acts through risk-rated, policy-gated execution, while the OpenWorker harness (daemon, scheduled jobs, reach channels, encrypted vault) lets it work reliably on your own hardware. v6.1 adds security hardening (SSRF protection, sandboxing, auth, rate limiting) covered by CI (gitleaks, OSV-Scanner, govulncheck, Semgrep, npm audit).
 
 **Next up:**
 - [ ] Voice interface for S-AI (speech-to-action)
