@@ -2,13 +2,14 @@
 
 # Sai Karun Nandipati
 
-**AI Systems Engineer · Multi-Agent Architect · Full-Stack Developer**
+**Assistant Professor (Data Science & AI) · AI Systems Engineer · Multi-Agent Architect · Researcher**
 
-Building autonomous AI systems that think, plan, and act.
+Building autonomous AI systems that think, plan, act — and that can be independently validated, published, and reproduced.
 
 [![Website](https://img.shields.io/badge/🌐-karun99.github.io-6366f1?style=for-the-badge)](https://karun99.github.io)
+[![ORCID](https://img.shields.io/badge/🔬-ORCID%200009--0007--9218--9750-a6ce39?style=for-the-badge)](https://orcid.org/0009-0007-9218-9750)
 [![LinkedIn](https://img.shields.io/badge/💼-LinkedIn-0a66c2?style=for-the-badge)](https://linkedin.com/in/saikarun)
-[![Email](https://img.shields.io/badge/📧-Email-ea4335?style=for-the-badge)](mailto:karun@saikarun.dev)
+[![Email](https://img.shields.io/badge/📧-Email-ea4335?style=for-the-badge)](mailto:saikarun085@gmail.com)
 [![npm](https://img.shields.io/badge/📦-npm-cb3837?style=for-the-badge)](https://www.npmjs.com/package/@saikarun/s-ai)
 
 </div>
@@ -17,7 +18,25 @@ Building autonomous AI systems that think, plan, and act.
 
 ## 🚀 What I Build
 
-I design and build **autonomous AI systems** — from multi-agent swarms that collaborate on complex tasks to execution engines that can safely take actions on your behalf. My work focuses on making AI practical, deployable, and trustworthy.
+I design and build **autonomous AI systems** — from multi-agent swarms that collaborate on complex tasks to execution engines that can safely take actions on your behalf. My work focuses on making AI practical, deployable, trustworthy — and **publishable as open research**: every flagship project ships with automated validation, transparent metrics, and a reproducible evaluation harness.
+
+---
+
+## 🔬 Research & Open Software
+
+Assistant Professor, Department of Data Science and Artificial Intelligence, **PB Siddhartha College of Arts and Science**. Research focus: **Agentic AI, multi-agent systems, digital twins, retrieval-augmented generation, and AI education**, with a second track in **biological-immunity-inspired adaptive security**.
+
+Five repositories are prepared for submission to the **Journal of Open Source Software (JOSS)**, each scoring **TRL 95/100 (research norms)** on an evidence-weighted readiness index from the [neural-harness editorial bot](https://github.com/karun99/neural-harness/tree/main/scripts):
+
+| Repository | Focus | Readiness |
+|---|---|---|
+| [neural-harness](https://github.com/karun99/neural-harness) | Validation harness engine + JOSS editorial bot | ✅ TRL 95 · JOSS-ready |
+| [samvit](https://github.com/karun99/samvit) | Local-first personal AI with accuracy marker + error-validation guardrails | ✅ TRL 95 · JOSS-ready |
+| [s-ai](https://github.com/karun99/s-ai) / [s-ai-update](https://github.com/karun99/s-ai-update) | Multi-agent swarm · synthetic executive · security-hardened execution | ✅ TRL 95 · JOSS-ready |
+| [glama-mcp](https://github.com/karun99/glama-mcp) | Dependency-free MCP gateway server | ✅ TRL 95 · JOSS-ready |
+| [health-quest](https://github.com/karun99/health-quest) | Ethics-first educational food-literacy game (student co-author) | ✅ Educational release-track |
+
+All submissions are tracked automatically by the [JOSS editorial bot](https://github.com/karun99/neural-harness/actions/workflows/joss-editorial.yml), which also handles `check` (readiness) and `submit` (issue creation on `openjournals/joss-reviews`) modes.
 
 ---
 
@@ -170,6 +189,10 @@ _Last updated: 2026-09-25 02:59 UTC · recomputed automatically every 6 hours by
 
 | Project | Description | Stack | Status |
 |---------|-------------|-------|--------|
+| [**neural-harness**](https://github.com/karun99/neural-harness) | Validation harness engine for neural software + JOSS editorial bot (TRL 95) | Python, stdlib | ✅ JOSS-ready |
+| [**samvit**](https://github.com/karun99/samvit) | Local-first personal AI, accuracy marker + 14-check guardrails (TRL 95) | Python, SQLite | ✅ JOSS-ready |
+| [**glama-mcp**](https://github.com/karun99/glama-mcp) | Dependency-free MCP server for the Glama OpenAI-compatible gateway (TRL 95) | Python, MCP | ✅ JOSS-ready |
+| [**health-quest**](https://github.com/karun99/health-quest) | Ethics-first food-literacy game for students (educational release-track) | HTML, Python | ✅ Active |
 | [**AI Studio**](https://github.com/karun99/aistudio) | AI video generation, stock images, usage analytics | Next.js, React, FastAPI | ✅ Active |
 | [**BlogBot**](https://github.com/karun99/blogbot) | Automated AI blog generation — WordPress plugin + cloud web app | PHP, Node.js, Express, Docker | ✅ Active |
 | [**Prompt Code**](https://github.com/karun99/prompt-code) | Prompt engineering challenge platform with AI evaluation | Node.js, Express, Netlify | ✅ Active |
@@ -250,15 +273,19 @@ Building **S-AI v6.1** — a production-hardened **Artificial Mind** that runs a
 
 ## 📫 Let's Connect
 
+Offering **project assistance** (architecture, CI/CD, tests, docs, and JOSS/open-source publication support) and **research assistance** (literature reviews, experimental design, manuscript preparation) for Agentic AI, multi-agent systems, digital twins, and AI education.
+
 I'm always interested in:
-- 🤝 Collaborating on AI/ML projects
-- 💡 Open-source contributions
+- 🤝 Collaborating on AI/ML research & open-source projects
+- 💡 Project assistance — take a prototype to a publishable, JOSS-ready repository
+- 🔬 Research assistance — design, validation, and write-up support
 - 🎤 Speaking at meetups/conferences
 - 📧 Consulting on multi-agent systems
 
-[![Email](https://img.shields.io/badge/✉️-karun@saikarun.dev-ea4335?style=flat-square)](mailto:karun@saikarun.dev)
+[![Email](https://img.shields.io/badge/✉️-saikarun085%40gmail.com-ea4335?style=flat-square)](mailto:saikarun085@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/💼-LinkedIn-0a66c2?style=flat-square)](https://linkedin.com/in/saikarun)
 [![Twitter](https://img.shields.io/badge/🐦-@saikarun-1da1f2?style=flat-square)](https://twitter.com/saikarun)
+[![ResearchGate](https://img.shields.io/badge/🔬-ResearchGate-00ccbb?style=flat-square)](https://www.researchgate.net/profile/Sai-Karun-Nandipati)
 
 ---
 
