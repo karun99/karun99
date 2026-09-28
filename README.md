@@ -33,6 +33,7 @@ Five repositories are prepared for submission to the **Journal of Open Source So
 | [neural-harness](https://github.com/karun99/neural-harness) | Validation harness engine + JOSS editorial bot | ✅ TRL 95 · JOSS-ready |
 | [samvit](https://github.com/karun99/samvit) | Local-first personal AI with accuracy marker + error-validation guardrails | ✅ TRL 95 · JOSS-ready |
 | [s-ai](https://github.com/karun99/s-ai) / [s-ai-update](https://github.com/karun99/s-ai-update) | Multi-agent swarm · synthetic executive · security-hardened execution | ✅ TRL 95 · JOSS-ready |
+| [s-ai-soulbot](https://github.com/karun99/s-ai-soulbot) | Agentic AI companion — v3.0 SRS + Appendices A–H, 136 tests, T0–T6 conformance | ✅ v3.0 · JOSS-ready |
 | [glama-mcp](https://github.com/karun99/glama-mcp) | Dependency-free MCP gateway server | ✅ TRL 95 · JOSS-ready |
 | [health-quest](https://github.com/karun99/health-quest) | Ethics-first educational food-literacy game (student co-author) | ✅ Educational release-track |
 
@@ -140,6 +141,40 @@ celebrum validate
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+### [![S-AI SoulBot](https://img.shields.io/badge/S--AI%20SoulBot-v3.0-10b981?style=for-the-badge&logo=node.js&logoColor=white)](https://github.com/karun99/s-ai-soulbot)
+
+**Agentic AI Companion · Jātaka-Aligned Guardrails**
+
+A TypeScript/React AI companion (v3.0.0) with a full engineering document set — SRS + Appendices A–H covering glossary, data schemas, threat matrix, Jātaka guardrail registry, literature review, case studies, test protocol, and deployment. Ships with a formal conformance model: **7 tiers (T0–T6)** over **4 invariants**, **23 Jātaka guardrails**, and **136 passing tests** across 11 suites.
+
+```
+npm run verify   # lint + typecheck + test + build
+```
+
+**Stack:** TypeScript · React · Zod · Node ≥ 20 · MIT License
+
+</td>
+<td width="50%" valign="top">
+
+### [![Prompts & MCP](https://img.shields.io/badge/Prompts%20%26%20MCP-Glama.ai-6366f1?style=for-the-badge)](/prompts-and-mcp.html)
+
+**Model Context Protocol Index**
+
+Every neural-network project is published on **Glama.ai** as an MCP server under the `karun99` namespace:
+
+- 🧠 [Celebrum](https://glama.ai/mcp/servers/karun99/celebrum) — LIVE listing (persona + memory graph + truth engine tools)
+- 🔌 [glama-mcp](https://glama.ai/mcp/servers/karun99/glama-mcp) — dependency-free MCP gateway
+- ⚙️ [S-AI](https://glama.ai/mcp/servers/karun99/s-ai) · [S-AI-Update](https://glama.ai/mcp/servers/karun99/s-ai-update)
+- 🤖 [S-AI-SoulBot](https://glama.ai/mcp/servers/karun99/s-ai-soulbot) · [neural-harness](https://glama.ai/mcp/servers/karun99/neural-harness)
+- and **15+ more** AI projects — see the full index: [karun99.github.io/prompts-and-mcp.html](https://karun99.github.io/prompts-and-mcp.html)
+
+> New listings are indexed by the Glama crawler within ~24h of claiming each repo.
+
+</td>
+</tr>
 </table>
 
 ---
@@ -192,6 +227,7 @@ _Last updated: 2026-09-28 12:39 UTC · recomputed automatically every 6 hours by
 | [**neural-harness**](https://github.com/karun99/neural-harness) | Validation harness engine for neural software + JOSS editorial bot (TRL 95) | Python, stdlib | ✅ JOSS-ready |
 | [**samvit**](https://github.com/karun99/samvit) | Local-first personal AI, accuracy marker + 14-check guardrails (TRL 95) | Python, SQLite | ✅ JOSS-ready |
 | [**glama-mcp**](https://github.com/karun99/glama-mcp) | Dependency-free MCP server for the Glama OpenAI-compatible gateway (TRL 95) | Python, MCP | ✅ JOSS-ready |
+| [**s-ai-soulbot**](https://github.com/karun99/s-ai-soulbot) | Agentic AI companion v3.0 — Jātaka guardrails, SRS + Appendices A–H | TypeScript, React, Zod | ✅ v3.0 · Active |
 | [**health-quest**](https://github.com/karun99/health-quest) | Ethics-first food-literacy game for students (educational release-track) | HTML, Python | ✅ Active |
 | [**AI Studio**](https://github.com/karun99/aistudio) | AI video generation, stock images, usage analytics | Next.js, React, FastAPI | ✅ Active |
 | [**BlogBot**](https://github.com/karun99/blogbot) | Automated AI blog generation — WordPress plugin + cloud web app | PHP, Node.js, Express, Docker | ✅ Active |
