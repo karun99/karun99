@@ -200,7 +200,7 @@ _Rows below are generated and **updated automatically every 6 hours** — badges
 ### Live project readiness
 
 <!-- TRL-TABLE -->
-_Last updated: 2026-10-05 13:20 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
+_Last updated: 2026-10-05 23:35 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
 | Project | TRL Level | Efficiency | Live Signals |
 |---------|-----------|------------|--------------|
 | ✅ [**buildbot**](https://github.com/karun99/buildbot) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `66/100` `███████░░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
@@ -212,8 +212,8 @@ _Last updated: 2026-10-05 13:20 UTC · recomputed automatically every 6 hours by
 | 🔗 [**celebrum**](https://github.com/karun99/celebrum) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `58/100` `██████░░░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🔗 [**Collabuild**](https://github.com/karun99/Collabuild) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `58/100` `██████░░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🔗 [**glama-mcp**](https://github.com/karun99/glama-mcp) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `58/100` `██████░░░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🛡️ License · ⚡ Active |
+| 🔗 [**neural-harness**](https://github.com/karun99/neural-harness) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `58/100` `██████░░░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🛡️ License · ⚡ Active |
 | 🔗 [**samvit**](https://github.com/karun99/samvit) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `58/100` `██████░░░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 📄 Docs · 🛡️ License · ⚡ Active |
-| 🧪 [**neural-harness**](https://github.com/karun99/neural-harness) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `48/100` `█████░░░░░` | ❌ CI · 🧪 Tests · 🐳 Docker · 🛡️ License · ⚡ Active |
 | 🧪 [**CodeQuest**](https://github.com/karun99/CodeQuest) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `46/100` `█████░░░░░` | ❌ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🧪 [**ai-content-studio**](https://github.com/karun99/ai-content-studio) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `44/100` `████░░░░░░` | ✅ CI · 🐳 Docker · ⚡ Active |
 | 🧪 [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `36/100` `████░░░░░░` | 🐳 Docker · ⚡ Active |
