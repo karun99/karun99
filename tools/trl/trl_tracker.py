@@ -38,6 +38,50 @@ TRL_STAGES = [
 TRL_COLORS = ["6b7280", "6b7280", "f97316", "f97316", "eab308", "eab308", "22c55e", "22c55e", "8b5cf6"]
 TRL_STARS = ["●", "●", "●●", "●●", "●●●", "●●●", "●●●●", "●●●●", "●●●●●"]
 
+# Dependency manifests, matched on basename so nested layouts count.
+MANIFEST_FILES = frozenset((
+    "package.json", "pyproject.toml", "setup.py", "setup.cfg", "cargo.toml",
+    "go.mod", "pom.xml", "build.gradle", "requirements.txt", "pipfile", "gemfile",
+))
+
+# Conventional entry-point filenames, matched on basename at any depth.
+ENTRY_FILES = frozenset((
+    "main.py", "__main__.py", "app.py", "cli.py", "index.js", "index.ts",
+    "index.tsx", "main.go", "main.rs", "manage.py", "server.js", "server.ts",
+))
+
+# Conventional entry-point subpaths that are not literally named main/index.
+ENTRY_PREFIXES = ("bin/", "cmd/", "pkg/main.go", "src/main.", "src/index.")
+
+# Container definitions, matched on basename so nested paths (infra/Dockerfile)
+# count. Variants are recognised explicitly rather than by a loose prefix, so
+# that documentation such as docs/docker-compose-notes.md is not mistaken for a
+# compose file.
+DOCKER_FILES = frozenset(("dockerfile", "docker-compose.yml", "compose.yaml", "compose.yml"))
+DOCKER_VARIANT_PREFIXES = ("docker-compose.", "compose.")
+
+
+def is_manifest_path(path: str) -> bool:
+    """True if the repo-relative path is a dependency manifest at any depth."""
+    return os.path.basename(path) in MANIFEST_FILES
+
+
+def is_entry_path(path: str) -> bool:
+    """True if the path is a conventional program entry point."""
+    if os.path.basename(path) in ENTRY_FILES:
+        return True
+    return any(path.startswith(prefix) for prefix in ENTRY_PREFIXES)
+
+
+def is_docker_path(path: str) -> bool:
+    """True if the path is a container definition at any depth."""
+    base = os.path.basename(path)
+    if base in DOCKER_FILES:
+        return True
+    if base.startswith("dockerfile."):
+        return True
+    return base.startswith(DOCKER_VARIANT_PREFIXES) and base.endswith((".yml", ".yaml"))
+
 
 def api(path: str, params: dict | None = None):
     url = f"{API}{path}"
@@ -101,16 +145,19 @@ def analyze(owner: str, repo: str) -> dict | None:
     has_readme = isinstance(readme, dict) and readme.get("download_url") is not None
     license_ok = bool(meta.get("license"))
     has_docs = any(f.startswith(("docs/", "documentation/")) for f in lower)
-    has_manifest = any(f in lower for f in (
-        "package.json", "pyproject.toml", "setup.py", "setup.cfg", "cargo.toml",
-        "go.mod", "pom.xml", "build.gradle", "requirements.txt", "pipfile", "gemfile"))
-    has_entry = any(f in lower for f in (
-        "main.py", "__main__.py", "app.py", "cli.py", "index.js", "index.ts",
-        "src/index.js", "src/index.ts", "manage.py", "server.js", "server.ts")) or \
-        any(f.startswith(("bin/", "cmd/")) for f in lower)
+    # Manifests are matched on basename: backend/pyproject.toml and
+    # frontend/package.json are real manifests. Exact-match against full paths
+    # silently missed every nested layout.
+    has_manifest = any(is_manifest_path(f) for f in lower)
+    # Entry points: conventional basenames at any depth, plus the well-known
+    # conventional subpaths that are not literally called main/index.
+    has_entry = any(is_entry_path(f) for f in lower)
     has_tests = any(f.startswith(("test/", "tests/", "spec/", "__tests__/")) or
                     "_test." in f or f.endswith((".test.js", ".test.ts", ".spec.js", ".spec.ts")) for f in lower)
-    has_docker = any(f in lower or f.startswith(("dockerfile", "docker-compose", "compose.")) for f in ("dockerfile", "docker-compose.yml", "compose.yaml", "compose.yml"))
+    # Docker: iterate the repo's own file list. The previous version iterated a
+    # hardcoded list of candidate *names*, so f.startswith(...) was testing the
+    # candidate rather than the repo file and has_docker was always True.
+    has_docker = any(is_docker_path(f) for f in lower)
 
     size_mb = (meta.get("size") or 0) / 1024.0
     stars = meta.get("stargazers_count") or 0
