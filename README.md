@@ -7,6 +7,7 @@
 Building autonomous AI systems that think, plan, act — and that can be independently validated, published, and reproduced.
 
 [![Website](https://img.shields.io/badge/🌐-karun99.github.io-6366f1?style=for-the-badge)](https://karun99.github.io)
+[![MCP Servers](https://img.shields.io/badge/🔌-MCP%20Servers-22c55e?style=for-the-badge)](https://karun99.github.io/prompts-and-mcp.html)
 [![ORCID](https://img.shields.io/badge/🔬-ORCID%200009--0007--9218--9750-a6ce39?style=for-the-badge)](https://orcid.org/0009-0007-9218-9750)
 [![LinkedIn](https://img.shields.io/badge/💼-LinkedIn-0a66c2?style=for-the-badge)](https://linkedin.com/in/saikarun)
 [![Email](https://img.shields.io/badge/📧-Email-ea4335?style=for-the-badge)](mailto:saikarun085@gmail.com)
@@ -38,6 +39,73 @@ Five repositories are prepared for submission to the **Journal of Open Source So
 | [health-quest](https://github.com/karun99/health-quest) | Ethics-first educational food-literacy game (student co-author) | ✅ Educational release-track |
 
 All submissions are tracked automatically by the [JOSS editorial bot](https://github.com/karun99/neural-harness/actions/workflows/joss-editorial.yml), which also handles `check` (readiness) and `submit` (issue creation on `openjournals/joss-reviews`) modes.
+
+---
+
+## 🔌 MCP Servers — Live
+
+Two **Model Context Protocol** servers are running locally and answer a real `initialize` + `tools/list` handshake. **10 tools across 2 servers**, both on `stdio`, both MIT-licensed, both open source.
+
+| Server | Version | Tools | Transport | Runtime | Source |
+|---|---|:--:|:---:|---|---|
+| **`glama-gateway`**<br>(`glama-gateway-mcp`) | 1.0.0 | **4** | stdio | Python 3.9+, **stdlib only**, zero dependencies | [karun99/glama-mcp](https://github.com/karun99/glama-mcp) |
+| **`s-ai-swarm`**<br>(S-AI Swarm) | 3.0.1 | **6** | stdio | Node.js / TypeScript, MCP + resources + prompts | [karun99/s-ai-update](https://github.com/karun99/s-ai-update) |
+
+### `glama-gateway` — 4 tools
+
+One key, one credential, one endpoint for every model. Fronts the Glama AI gateway (`https://gateway.glama.ai/v1`, OpenAI-compatible, 100+ models) so any MCP client gains `openai/…`, `anthropic/…` and `google/…` through four tools.
+
+| Tool | Purpose |
+|---|---|
+| `glama_list_models` | List models available through the gateway (OpenAI-format ids) |
+| `glama_chat_completion` | Chat completion against the gateway |
+| `glama_stream_completion` | Streamed completion; deltas reassembled into one answer with usage metadata |
+| `glama_request_status` | Look up the status of a completion request by id |
+
+### `s-ai-swarm` — 6 tools
+
+The multi-agent swarm, exposed as a tool surface: bias-reduced consensus across specialized agents, a persistent knowledge graph, and web crawling.
+
+| Tool | Purpose |
+|---|---|
+| `swarm_query` | Bias-reduced, multi-perspective answer from the agent swarm |
+| `crawl_web` | Crawl and extract web content (crawl4ai) |
+| `graph_store` | Store information in the knowledge graph |
+| `graph_query` | Query the knowledge graph |
+| `graph_stats` | Knowledge-graph statistics |
+| `bias_analysis` | Analyze text for potential biases |
+
+### Install & wire
+
+```bash
+pip install .            # in glama-mcp/ — dependency-free
+export GLAMA_API_KEY=…   # one credential covers every model
+```
+
+Both are registered per-project through a committed `.mcp.json` — the same file in **9 repositories**:
+
+```json
+{
+  "mcpServers": {
+    "glama-gateway": {
+      "command": "glama-mcp",
+      "args": [],
+      "env": {
+        "GLAMA_API_KEY": "${GLAMA_API_KEY}",
+        "GLAMA_DEFAULT_MODEL": "openai/gpt-4o"
+      }
+    }
+  }
+}
+```
+
+Wired into: [s-ai-soulbot](https://github.com/karun99/s-ai-soulbot) · [neural-harness](https://github.com/karun99/neural-harness) · [samvit](https://github.com/karun99/samvit) · [celebrum](https://github.com/karun99/celebrum) · [Collabuild](https://github.com/karun99/Collabuild) · [health-quest](https://github.com/karun99/health-quest) · [teddy-techlearn](https://github.com/karun99/teddy-techlearn) · [glama-mcp](https://github.com/karun99/glama-mcp) · [karun99.github.io](https://github.com/karun99/karun99.github.io)
+
+### Contract-checked servers
+
+Separate from the two live processes above, [S-AI SoulBot](https://github.com/karun99/s-ai-soulbot) conformance tiers **T2 (MCP contract)** and **T3 (scope equality)** validate the scope declarations of four further servers — `ahph-consent`, `ahph-sentinel`, `ahph-browser` and `ahph-engine`. T3 requires a tool's *enforced* scope to **equal** its *declared* scope in both directions: under- and over-enforcement both fail. Those four are contract-validated, not live processes, so they are deliberately not counted in the 10 tools above.
+
+Full breakdown with the raw tool manifests: **[karun99.github.io/prompts-and-mcp.html](https://karun99.github.io/prompts-and-mcp.html)**
 
 ---
 
@@ -276,7 +344,7 @@ _Last updated: 2026-10-06 06:48 UTC · recomputed automatically every 6 hours by
 <td>
 
 **Infrastructure**
-- MCP (Model Context Protocol)
+- MCP (Model Context Protocol) — 2 live servers, 10 tools, 9 projects wired
 - OpenRouter / Ollama / Local LLMs
 - Edge AI (Raspberry Pi, ARM)
 - Zero-inference-cost architectures
