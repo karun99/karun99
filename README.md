@@ -268,7 +268,7 @@ _Rows below are generated and **updated automatically every 6 hours** — badges
 ### Live project readiness
 
 <!-- TRL-TABLE -->
-_Last updated: 2026-10-09 12:26 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
+_Last updated: 2026-10-09 22:08 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
 | Project | TRL Level | Efficiency | Live Signals |
 |---------|-----------|------------|--------------|
 | ✅ [**s-ai-soulbot**](https://github.com/karun99/s-ai-soulbot) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `65/100` `██████░░░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 📄 Docs · 🛡️ License · ⚡ Active |
@@ -284,7 +284,7 @@ _Last updated: 2026-10-09 12:26 UTC · recomputed automatically every 6 hours by
 | 🔗 [**samvit**](https://github.com/karun99/samvit) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `58/100` `██████░░░░` | ✅ CI · 🧪 Tests · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🔗 [**ai-content-studio**](https://github.com/karun99/ai-content-studio) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `54/100` `█████░░░░░` | ✅ CI · 🐳 Docker · ⚡ Active |
 | 🧪 [**CodeQuest**](https://github.com/karun99/CodeQuest) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `42/100` `████░░░░░░` | ❌ CI · 🧪 Tests · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
-| 🧪 [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | ![TRL 3: Proof of Concept](https://img.shields.io/badge/TRL%203-Proof%20of%20Concept-f97316?style=flat-square) | `32/100` `███░░░░░░░` | ⚡ Active |
+| 🧪 [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `40/100` `████░░░░░░` | ❌ CI · ⚡ Active |
 | 🧪 [**arthai**](https://github.com/karun99/arthai) | ![TRL 3: Proof of Concept](https://img.shields.io/badge/TRL%203-Proof%20of%20Concept-f97316?style=flat-square) | `26/100` `███░░░░░░░` | ❌ CI · 🌐 Demo · 🛡️ License · ⚡ Active |
 
 <sub>Efficiency 0–100 = live-weighted validation score. Docs & license · code/entry-point maturity · CI/CD, releases, Docker & live deployment · automated tests & green CI · stars, forks, contributors & age.</sub>
