@@ -268,11 +268,10 @@ _Rows below are generated and **updated automatically every 6 hours** — badges
 ### Live project readiness
 
 <!-- TRL-TABLE -->
-_Last updated: 2026-10-11 11:57 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
+_Last updated: 2026-10-11 17:23 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
 | Project | TRL Level | Efficiency | Live Signals |
 |---------|-----------|------------|--------------|
 | 🚀 [**s-ai**](https://github.com/karun99/s-ai) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `82/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
-| 🚀 [**s-ai-update**](https://github.com/karun99/s-ai-update) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `82/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
 | 🚀 [**ai-content-studio**](https://github.com/karun99/ai-content-studio) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**arthai**](https://github.com/karun99/arthai) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**buildbot**](https://github.com/karun99/buildbot) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
@@ -286,6 +285,7 @@ _Last updated: 2026-10-11 11:57 UTC · recomputed automatically every 6 hours by
 | 🚀 [**s-ai-soulbot**](https://github.com/karun99/s-ai-soulbot) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**samvit**](https://github.com/karun99/samvit) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 🛡️ License · ⚡ Active |
+| 🏭 [**s-ai-update**](https://github.com/karun99/s-ai-update) | ![TRL 7: Realistic Environment Demo](https://img.shields.io/badge/TRL%207-Realistic%20Environment%20Demo-22c55e?style=flat-square) | `72/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
 
 <sub>Efficiency 0–100 = live-weighted validation score. Docs & license · code/entry-point maturity · CI/CD, releases, Docker & live deployment · automated tests & green CI · stars, forks, contributors & age.</sub>
 <!-- /TRL-TABLE -->
