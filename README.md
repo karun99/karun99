@@ -45,7 +45,7 @@ Autonomous AI systems — multi-agent swarms that collaborate on complex tasks, 
 | **Public repositories** | 44 |
 | **Projects at TRL 8** (release-ready, fully validated) | 13 of 16 tracked |
 | **Live MCP servers** | 3 servers · 14 tools (stdio) |
-| **MCP servers graded on the M8ven Trust Index** | 4 (grade **B** · 89/100 · verified publisher) |
+| **MCP servers indexed** | **19** submitted to [Glama.ai](https://glama.ai/mcp/servers?query=karun99) (2 live) · **19** scored on the [M8ven Trust Index](https://m8ven.ai/publisher/karun99) (4 live-verified, grade **B** · 89/100) |
 | **Repositories prepared for JOSS** | 6 |
 | **Current flagship** | **S-AI v6.1** — Synthetic Executive / Integrated OpenWorker |
 
@@ -128,18 +128,33 @@ export GLAMA_API_KEY=…   # one credential covers every model
 
 All are registered per-project through a committed `.mcp.json` — the same file in **10 repositories**: [s-ai-soulbot](https://github.com/karun99/s-ai-soulbot) · [neural-harness](https://github.com/karun99/neural-harness) · [samvit](https://github.com/karun99/samvit) · [celebrum](https://github.com/karun99/celebrum) · [Collabuild](https://github.com/karun99/Collabuild) · [health-quest](https://github.com/karun99/health-quest) · [teddy-techlearn](https://github.com/karun99/teddy-techlearn) · [glama-mcp](https://github.com/karun99/glama-mcp) · [karun99.github.io](https://github.com/karun99/karun99.github.io) · [zoe](https://github.com/karun99/zoe).
 
-### Graded on the M8ven Trust Index — 4 servers
+### Indexing & trust — every MCP server, both registries
 
-Independently graded by [M8ven](https://m8ven.ai/publisher/karun99) as a **verified publisher** (grade **B** · 89/100):
+Every MCP server in this profile is submitted to **two independent registries**, and discovery is automated straight from the source: each repository carries a committed [`glama.json`](https://glama.ai/blog/2025-07-08-what-is-glamajson) ownership claim plus the GitHub topics `mcp` and `model-context-protocol`, so both directories index the server from the repository itself. Interactively maintained at **[karun99.github.io/prompts-and-mcp.html](https://karun99.github.io/prompts-and-mcp.html)**.
 
-| Server | Grade | M8ven |
-|---|:--:|---|
-| [**celebrum**](https://github.com/karun99/celebrum) | B · 89 | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/celebrum)](https://m8ven.ai/mcp/karun99/celebrum?s=readme) |
-| [**neural-harness**](https://github.com/karun99/neural-harness) | B · 89 | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/neural-harness)](https://m8ven.ai/mcp/karun99/neural-harness?s=readme) |
-| [**s-ai**](https://github.com/karun99/s-ai) | B · 89 | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/s-ai)](https://m8ven.ai/mcp/karun99/s-ai?s=readme) |
-| [**s-ai-update**](https://github.com/karun99/s-ai-update) | B · 89 | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/s-ai-update)](https://m8ven.ai/mcp/karun99/s-ai-update?s=readme) |
+| Server | Repository | Tools | Glama.ai | M8ven Trust Index |
+|---|---|:--:|:--:|:--:|
+| [Celebrum](https://github.com/karun99/celebrum) | celebrum | `6` | ✅ [`A/B/A`](https://glama.ai/mcp/servers/karun99/celebrum) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/celebrum)](https://m8ven.ai/mcp/karun99/celebrum) `B · 89` ⚡ |
+| [glama-gateway](https://github.com/karun99/glama-mcp) | glama-mcp | `4` | ✅ [`A/B/C`](https://glama.ai/mcp/servers/karun99/glama-mcp) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/glama-mcp)](https://m8ven.ai/publisher/karun99) `C · 74` |
+| [S-AI](https://github.com/karun99/s-ai) | s-ai | `63` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/s-ai)](https://m8ven.ai/mcp/karun99/s-ai) `B · 89` ⚡ |
+| [s-ai-swarm](https://github.com/karun99/s-ai-update) | s-ai-update | `62` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/s-ai-update)](https://m8ven.ai/mcp/karun99/s-ai-update) `B · 89` ⚡ |
+| [S-AI SoulBot](https://github.com/karun99/s-ai-soulbot) | s-ai-soulbot | `5` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/s-ai-soulbot)](https://m8ven.ai/publisher/karun99) `C · 74` |
+| [neural-harness](https://github.com/karun99/neural-harness) | neural-harness | `4` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/neural-harness)](https://m8ven.ai/mcp/karun99/neural-harness) `B · 89` ⚡ |
+| [Samvit](https://github.com/karun99/samvit) | samvit | `5` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/samvit)](https://m8ven.ai/publisher/karun99) `C · 71` |
+| [Collabuild](https://github.com/karun99/Collabuild) | Collabuild | `5` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/Collabuild)](https://m8ven.ai/publisher/karun99) `C · 74` |
+| [AI Content Studio](https://github.com/karun99/ai-content-studio) | ai-content-studio | — | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/ai-content-studio)](https://m8ven.ai/publisher/karun99) `F · 16` |
+| [Teddy x TechLearn](https://github.com/karun99/teddy-techlearn) | teddy-techlearn | `5` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/teddy-techlearn)](https://m8ven.ai/publisher/karun99) `C · 72` |
+| [Health Quest](https://github.com/karun99/health-quest) | health-quest | `5` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/health-quest)](https://m8ven.ai/publisher/karun99) `C · 74` |
+| [HelixDB](https://github.com/karun99/HelixDB) | HelixDB | `5` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/HelixDB)](https://m8ven.ai/publisher/karun99) `C · 71` |
+| [You AI Engine](https://github.com/karun99/you-ai-engine) | you-ai-engine | — | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/you-ai-engine)](https://m8ven.ai/publisher/karun99) `D · 56` |
+| [Gemini AI Chatbot](https://github.com/karun99/gemini-ai-chatbot) | gemini-ai-chatbot | `7` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/gemini-ai-chatbot)](https://m8ven.ai/publisher/karun99) `D · 48` |
+| [AI Studio](https://github.com/karun99/aistudio) | aistudio | `99` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/aistudio)](https://m8ven.ai/publisher/karun99) `C · 71` |
+| [Blogbot](https://github.com/karun99/blogbot) | blogbot | — | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/blogbot)](https://m8ven.ai/publisher/karun99) `D · 58` |
+| [Buildbot](https://github.com/karun99/buildbot) | buildbot | — | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/buildbot)](https://m8ven.ai/publisher/karun99) `F · 20` |
+| [ArthAI](https://github.com/karun99/arthai) | arthai | `5` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/arthai)](https://m8ven.ai/publisher/karun99) `C · 71` |
+| [Zoe](https://github.com/karun99/zoe) | zoe | `4` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/zoe)](https://m8ven.ai/publisher/karun99) `C · 74` |
 
-Full breakdown with the raw tool manifests: **[karun99.github.io/prompts-and-mcp.html](https://karun99.github.io/prompts-and-mcp.html)**
+**Glama.ai** indexes the server from the repository (`glama.json` + the `mcp` / `model-context-protocol` topics) and captures the full tool schema alongside **license / quality / maintenance** grades. **M8ven** independently scans each repository (`Code Verified`, ~2 min) and, for connected repositories, re-verifies on **every code change** (`⚡` Live Monitored). Four servers hold **Verified Publisher** status (`B · 89/100`) on the [M8ven publisher page](https://m8ven.ai/publisher/karun99). A `—` in **Tools** marks a repository whose MCP tool surface M8ven has not detected yet.
 
 ---
 
@@ -270,7 +285,7 @@ Grouped by purpose. Links go to the live repository.
 
 | AI & autonomy | Platforms & languages | Infrastructure |
 |---|---|---|
-| Multi-agent systems (MAS) | TypeScript / Node.js (primary) | MCP — 2 live servers, 10 tools, 9 projects wired |
+| Multi-agent systems (MAS) | TypeScript / Node.js (primary) | MCP — 3 live servers, 14 tools, 10 projects wired |
 | Autonomous execution + approval gates | Python / FastAPI | OpenRouter · Ollama · local LLMs |
 | Tool orchestration & risk assessment | React / Next.js | Edge AI (Raspberry Pi, ARM) |
 | Knowledge graphs & memory systems | Docker / edge deployment | Zero-inference-cost architectures |
