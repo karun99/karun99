@@ -234,7 +234,7 @@ _Rows below are generated and **updated automatically every 6 hours** — badges
 ### Live project readiness
 
 <!-- TRL-TABLE -->
-_Last updated: 2026-10-13 15:07 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
+_Last updated: 2026-10-13 22:11 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
 | Project | TRL Level | Efficiency | Live Signals |
 |---------|-----------|------------|--------------|
 | 🚀 [**s-ai**](https://github.com/karun99/s-ai) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `82/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
@@ -246,13 +246,13 @@ _Last updated: 2026-10-13 15:07 UTC · recomputed automatically every 6 hours by
 | 🚀 [**CodeQuest**](https://github.com/karun99/CodeQuest) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**Collabuild**](https://github.com/karun99/Collabuild) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**HelixDB**](https://github.com/karun99/HelixDB) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
-| 🚀 [**s-ai-soulbot**](https://github.com/karun99/s-ai-soulbot) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
-| 🚀 [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 🛡️ License · ⚡ Active |
 | ✅ [**glama-mcp**](https://github.com/karun99/glama-mcp) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | ✅ [**health-quest**](https://github.com/karun99/health-quest) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | ✅ [**neural-harness**](https://github.com/karun99/neural-harness) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| ✅ [**s-ai-soulbot**](https://github.com/karun99/s-ai-soulbot) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | ✅ [**samvit**](https://github.com/karun99/samvit) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
-| 🔗 [**zoe**](https://github.com/karun99/zoe) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `58/100` `██████░░░░` | ✅ CI · 🧪 Tests · 📄 Docs · 🛡️ License · ⚡ Active |
+| ✅ [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 🛡️ License · ⚡ Active |
+| 🧪 [**zoe**](https://github.com/karun99/zoe) | ![TRL 4: Core Components](https://img.shields.io/badge/TRL%204-Core%20Components-f97316?style=flat-square) | `48/100` `█████░░░░░` | ❌ CI · 🧪 Tests · 📄 Docs · 🛡️ License · ⚡ Active |
 
 <sub>Efficiency 0–100 = live-weighted validation score. Docs & license · code/entry-point maturity · CI/CD, releases, Docker & live deployment · automated tests & green CI · stars, forks, contributors & age.</sub>
 <!-- /TRL-TABLE -->
