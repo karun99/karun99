@@ -1,0 +1,9 @@
+# .bio/config.yaml — runtime switches for the Bio-Inspired Autonomous Audit.
+# Behavior lives in BIO_AUDIT.md; this file holds operational toggles only.
+enabled: true
+dry_run: false
+automation_lock: .bio/automation_lock.json
+scripts_dir: scripts
+default_priority_label: prio/P2
+notify:
+  - karun99

@@ -1,3 +1,7 @@
 tools/trl/__pycache__/
 __pycache__/
 *.pyc
+
+# Bio-Inspired Autonomous Audit runtime state
+.bio/state.json
+.bio/alert_context.json

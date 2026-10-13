@@ -1,0 +1,16 @@
+{
+  "generated_at": null,
+  "supported_versions": ["latest"],
+  "posture": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "direct_dependencies": {},
+  "lockfiles": [],
+  "licenses": {
+    "allowed": ["MIT", "Apache-2.0", "BSD-3-Clause", "MPL-2.0", "ISC"],
+    "forbidden": ["GPL-3.0", "AGPL-3.0", "SSPL", "BUSL-1.1"]
+  }
+}
