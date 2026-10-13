@@ -4,7 +4,7 @@
 
 **Assistant Professor (Data Science & AI) · AI Systems Engineer · Multi-Agent Architect · Researcher**
 
-Building autonomous AI systems that think, plan, act — and that can be independently validated, published, and reproduced.
+I build autonomous AI systems that think, plan, and act — and that can be independently **validated, published, and reproduced**.
 
 [![Website](https://img.shields.io/badge/🌐-karun99.github.io-6366f1?style=for-the-badge)](https://karun99.github.io)
 [![MCP Servers](https://img.shields.io/badge/🔌-MCP%20Servers-22c55e?style=for-the-badge)](https://karun99.github.io/prompts-and-mcp.html)
@@ -17,43 +17,80 @@ Building autonomous AI systems that think, plan, act — and that can be indepen
 
 ---
 
-## 🚀 What I Build
+## Contents
 
-I design and build **autonomous AI systems** — from multi-agent swarms that collaborate on complex tasks to execution engines that can safely take actions on your behalf. My work focuses on making AI practical, deployable, trustworthy — and **publishable as open research**: every flagship project ships with automated validation, transparent metrics, and a reproducible evaluation harness.
-
----
-
-## 🔬 Research & Open Software
-
-Assistant Professor, Department of Data Science and Artificial Intelligence, **PB Siddhartha College of Arts and Science**. Research focus: **Agentic AI, multi-agent systems, digital twins, retrieval-augmented generation, and AI education**, with a second track in **biological-immunity-inspired adaptive security**.
-
-Five repositories are prepared for submission to the **Journal of Open Source Software (JOSS)**, each scoring **TRL 95/100 (research norms)** on an evidence-weighted readiness index from the [neural-harness editorial bot](https://github.com/karun99/neural-harness/tree/main/scripts):
-
-| Repository | Focus | Readiness |
-|---|---|---|
-| [neural-harness](https://github.com/karun99/neural-harness) | Validation harness engine + JOSS editorial bot | ✅ TRL 95 · JOSS-ready |
-| [samvit](https://github.com/karun99/samvit) | Local-first personal AI with accuracy marker + error-validation guardrails | ✅ TRL 95 · JOSS-ready |
-| [s-ai](https://github.com/karun99/s-ai) / [s-ai-update](https://github.com/karun99/s-ai-update) | Multi-agent swarm · synthetic executive · security-hardened execution | ✅ TRL 95 · JOSS-ready |
-| [s-ai-soulbot](https://github.com/karun99/s-ai-soulbot) | Agentic AI companion — v3.0 SRS + Appendices A–H, 136 tests, T0–T6 conformance | ✅ v3.0 · JOSS-ready |
-| [glama-mcp](https://github.com/karun99/glama-mcp) | Dependency-free MCP gateway server | ✅ TRL 95 · JOSS-ready |
-| [health-quest](https://github.com/karun99/health-quest) | Ethics-first educational food-literacy game (student co-author) | ✅ Educational release-track |
-
-All submissions are tracked automatically by the [JOSS editorial bot](https://github.com/karun99/neural-harness/actions/workflows/joss-editorial.yml), which also handles `check` (readiness) and `submit` (issue creation on `openjournals/joss-reviews`) modes.
+- [What I build](#-what-i-build)
+- [At a glance](#-at-a-glance)
+- [Flagship projects](#-flagship-projects)
+- [MCP servers](#-mcp-servers)
+- [Research & open software](#-research--open-software)
+- [TRL readiness (live)](#-trl-tracker--live-project-maturity--efficiency)
+- [All repositories](#-all-repositories)
+- [Technical focus](#-technical-focus)
+- [Current focus](#-current-focus)
+- [Let's connect](#-lets-connect)
 
 ---
 
-## 🔌 MCP Servers — Live
+## 🚀 What I build
 
-Two **Model Context Protocol** servers are running locally and answer a real `initialize` + `tools/list` handshake. **10 tools across 2 servers**, both on `stdio`, both MIT-licensed, both open source.
+Autonomous AI systems — multi-agent swarms that collaborate on complex tasks, and execution engines that act on your behalf behind risk-rated approval gates. Every flagship project ships with **automated validation, transparent metrics, and a reproducible evaluation harness**, so the claims in this profile are reproducible from the code.
+
+---
+
+## 📌 At a glance
+
+| | |
+|---|---|
+| **Public repositories** | 43 |
+| **Projects at TRL 8** (release-ready, fully validated) | 13 of 15 tracked |
+| **Live MCP servers** | 2 servers · 10 tools (stdio) |
+| **MCP servers graded on the M8ven Trust Index** | 4 (grade **B** · 89/100 · verified publisher) |
+| **Repositories prepared for JOSS** | 6 |
+| **Current flagship** | **S-AI v6.1** — Synthetic Executive / Integrated OpenWorker |
+
+> Every number above is regenerated from live repository signals; the [TRL table](#-trl-tracker--live-project-maturity--efficiency) below updates automatically **every 6 hours**.
+
+---
+
+## 🧭 Flagship projects
+
+One project per row. **Stack**, whether it ships an **MCP** server, and its current **[TRL](#-trl-tracker--live-project-maturity--efficiency)** level.
+
+| Project | What it is | Stack | MCP | TRL |
+|---|---|:--:|:--:|:--:|
+| [**s-ai-update**](https://github.com/karun99/s-ai-update) | **S-AI v6.1** — Synthetic Executive: policy-gated execution, security hardening (SSRF, sandboxing, auth, rate limiting), OpenWorker harness (daemon, jobs, vault, reach) | TypeScript | ✅ | 7 |
+| [**s-ai**](https://github.com/karun99/s-ai) | **S-AI v5.1** — multi-agent swarm intelligence, MCP Builder, Skill Creator, neural mapping, 20+ providers | TypeScript | ✅ | 8 |
+| [**s-ai-soulbot**](https://github.com/karun99/s-ai-soulbot) | Consent-gated companion harness — Sentinel authorization, Jātaka guardrail registry, T0–T6 conformance tiers | TypeScript · React | ✅ | 8 |
+| [**samvit**](https://github.com/karun99/samvit) | Local-first personal AI — one memory graph, five profiles, VISION accuracy marker, 14-check validation | Python · SQLite | ✅ | 8 |
+| [**celebrum**](https://github.com/karun99/celebrum) | Local-first artificial brain — persona model + neuron/synapse memory graph + truth engine + guardrails | Python · SQLite | ✅ | 8 |
+| [**neural-harness**](https://github.com/karun99/neural-harness) | Shared validation engine + JOSS editorial bot measuring information-handling & synthesis accuracy | Python | ✅ | 8 |
+| [**glama-mcp**](https://github.com/karun99/glama-mcp) | Dependency-free MCP server for the Glama OpenAI-compatible gateway (list, chat, stream, status) | Python · stdlib | ✅ | 8 |
+| [**Collabuild**](https://github.com/karun99/Collabuild) | Multi-agent pipeline: research paper → SRS → modules → code → deploy → README | Python · FastAPI | — | 8 |
+| [**buildbot**](https://github.com/karun99/buildbot) | Student AI coding assistant: research paper → SRS → checklist → working code | Python | — | 8 |
+| [**arthai**](https://github.com/karun99/arthai) | Agentic commerce gateway for MSMEs — 6-layer financial governance + adaptive security | Python | — | 8 |
+| [**ai-content-studio**](https://github.com/karun99/ai-content-studio) | AI content platform — generation, knowledge management, model ops | JavaScript · React | — | 8 |
+| [**HelixDB**](https://github.com/karun99/HelixDB) | Research & learning companion tailored to each learner's approach | Python | — | 8 |
+| [**health-quest**](https://github.com/karun99/health-quest) | Ethics-first food-literacy game — transparent Health Score + real OSM eateries | HTML · Python | — | 8 |
+| [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | AI-enhanced M.Tech CSE learning hub — Teddy AI companion + persistent learner graph | HTML | — | 8 |
+| [**CodeQuest**](https://github.com/karun99/CodeQuest) | LAN-deployable coding/debugging assessment platform (anti-cheat, auto-scoring) | PHP · MySQL | — | 6 |
+
+Also on GitHub: [FRND4U](https://github.com/karun99/FRND4U) · [Duet — Digital Twin](https://github.com/karun99/Duet--Digital-Twin-Technology) · [techlearn](https://github.com/karun99/techlearn) · [QuestWrite](https://github.com/karun99/QuestWrite) · [ScholarSync](https://github.com/karun99/ScholarSync) · [plastic-waste-conservation](https://github.com/karun99/plastic-waste-conservation) — and the rest under [All repositories](#-all-repositories).
+
+---
+
+## 🔌 MCP Servers
+
+### Live processes — 2 servers · 10 tools
+
+Two **Model Context Protocol** servers run locally and answer a real `initialize` + `tools/list` handshake. Both `stdio`, both MIT-licensed.
 
 | Server | Version | Tools | Transport | Runtime | Source |
 |---|---|:--:|:---:|---|---|
-| **`glama-gateway`**<br>(`glama-gateway-mcp`) | 1.0.0 | **4** | stdio | Python 3.9+, **stdlib only**, zero dependencies | [karun99/glama-mcp](https://github.com/karun99/glama-mcp) |
-| **`s-ai-swarm`**<br>(S-AI Swarm) | 3.0.1 | **6** | stdio | Node.js / TypeScript, MCP + resources + prompts | [karun99/s-ai-update](https://github.com/karun99/s-ai-update) |
+| **`glama-gateway`** | 1.0.0 | **4** | stdio | Python 3.9+, **stdlib only**, zero dependencies | [karun99/glama-mcp](https://github.com/karun99/glama-mcp) |
+| **`s-ai-swarm`** | 3.0.1 | **6** | stdio | Node.js / TypeScript, MCP + resources + prompts | [karun99/s-ai-update](https://github.com/karun99/s-ai-update) |
 
-### `glama-gateway` — 4 tools
-
-One key, one credential, one endpoint for every model. Fronts the Glama AI gateway (`https://gateway.glama.ai/v1`, OpenAI-compatible, 100+ models) so any MCP client gains `openai/…`, `anthropic/…` and `google/…` through four tools.
+**`glama-gateway` — 4 tools** · one key, one endpoint for every model, fronting the Glama AI gateway (`https://gateway.glama.ai/v1`, OpenAI-compatible, 100+ models):
 
 | Tool | Purpose |
 |---|---|
@@ -62,9 +99,7 @@ One key, one credential, one endpoint for every model. Fronts the Glama AI gatew
 | `glama_stream_completion` | Streamed completion; deltas reassembled into one answer with usage metadata |
 | `glama_request_status` | Look up the status of a completion request by id |
 
-### `s-ai-swarm` — 6 tools
-
-The multi-agent swarm, exposed as a tool surface: bias-reduced consensus across specialized agents, a persistent knowledge graph, and web crawling.
+**`s-ai-swarm` — 6 tools** · the multi-agent swarm as a tool surface (bias-reduced consensus, persistent knowledge graph, web crawling):
 
 | Tool | Purpose |
 |---|---|
@@ -75,175 +110,44 @@ The multi-agent swarm, exposed as a tool surface: bias-reduced consensus across 
 | `graph_stats` | Knowledge-graph statistics |
 | `bias_analysis` | Analyze text for potential biases |
 
-### Install & wire
-
 ```bash
 pip install .            # in glama-mcp/ — dependency-free
 export GLAMA_API_KEY=…   # one credential covers every model
 ```
 
-Both are registered per-project through a committed `.mcp.json` — the same file in **9 repositories**:
+Both are registered per-project through a committed `.mcp.json` — the same file in **9 repositories**: [s-ai-soulbot](https://github.com/karun99/s-ai-soulbot) · [neural-harness](https://github.com/karun99/neural-harness) · [samvit](https://github.com/karun99/samvit) · [celebrum](https://github.com/karun99/celebrum) · [Collabuild](https://github.com/karun99/Collabuild) · [health-quest](https://github.com/karun99/health-quest) · [teddy-techlearn](https://github.com/karun99/teddy-techlearn) · [glama-mcp](https://github.com/karun99/glama-mcp) · [karun99.github.io](https://github.com/karun99/karun99.github.io).
 
-```json
-{
-  "mcpServers": {
-    "glama-gateway": {
-      "command": "glama-mcp",
-      "args": [],
-      "env": {
-        "GLAMA_API_KEY": "${GLAMA_API_KEY}",
-        "GLAMA_DEFAULT_MODEL": "openai/gpt-4o"
-      }
-    }
-  }
-}
-```
+### Graded on the M8ven Trust Index — 4 servers
 
-Wired into: [s-ai-soulbot](https://github.com/karun99/s-ai-soulbot) · [neural-harness](https://github.com/karun99/neural-harness) · [samvit](https://github.com/karun99/samvit) · [celebrum](https://github.com/karun99/celebrum) · [Collabuild](https://github.com/karun99/Collabuild) · [health-quest](https://github.com/karun99/health-quest) · [teddy-techlearn](https://github.com/karun99/teddy-techlearn) · [glama-mcp](https://github.com/karun99/glama-mcp) · [karun99.github.io](https://github.com/karun99/karun99.github.io)
+Independently graded by [M8ven](https://m8ven.ai/publisher/karun99) as a **verified publisher** (grade **B** · 89/100):
 
-### Contract-checked servers
-
-Separate from the two live processes above, [S-AI SoulBot](https://github.com/karun99/s-ai-soulbot) conformance tiers **T2 (MCP contract)** and **T3 (scope equality)** validate the scope declarations of four further servers — `ahph-consent`, `ahph-sentinel`, `ahph-browser` and `ahph-engine`. T3 requires a tool's *enforced* scope to **equal** its *declared* scope in both directions: under- and over-enforcement both fail. Those four are contract-validated, not live processes, so they are deliberately not counted in the 10 tools above.
+| Server | Grade | M8ven |
+|---|:--:|---|
+| [**celebrum**](https://github.com/karun99/celebrum) | B · 89 | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/celebrum)](https://m8ven.ai/mcp/karun99/celebrum?s=readme) |
+| [**neural-harness**](https://github.com/karun99/neural-harness) | B · 89 | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/neural-harness)](https://m8ven.ai/mcp/karun99/neural-harness?s=readme) |
+| [**s-ai**](https://github.com/karun99/s-ai) | B · 89 | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/s-ai)](https://m8ven.ai/mcp/karun99/s-ai?s=readme) |
+| [**s-ai-update**](https://github.com/karun99/s-ai-update) | B · 89 | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/s-ai-update)](https://m8ven.ai/mcp/karun99/s-ai-update?s=readme) |
 
 Full breakdown with the raw tool manifests: **[karun99.github.io/prompts-and-mcp.html](https://karun99.github.io/prompts-and-mcp.html)**
 
 ---
 
-## 🔥 Featured Projects
+## 🔬 Research & Open Software
 
-<table>
-<tr>
-<td width="50%" valign="top">
+Assistant Professor, Department of Data Science and Artificial Intelligence, **PB Siddhartha College of Arts and Science**. Research focus: **Agentic AI, multi-agent systems, digital twins, retrieval-augmented generation, and AI education**, with a second track in **biological-immunity-inspired adaptive security**.
 
-### [![S-AI](https://img.shields.io/badge/S--AI-v6.1-6366f1?style=for-the-badge&logo=node.js&logoColor=white)](https://github.com/karun99/s-ai-update)
+Six repositories are prepared for submission to the **Journal of Open Source Software (JOSS)**, each scoring **95/100** on the evidence-weighted *validation-readiness index* from the [neural-harness editorial bot](https://github.com/karun99/neural-harness/tree/main/scripts) — a documentation-and-validation readiness score, distinct from the 9-level [TRL](#-trl-tracker--live-project-maturity--efficiency) scale below:
 
-**Artificial Mind · Integrated OpenWorker**
+| Repository | Focus | Readiness |
+|---|---|---|
+| [neural-harness](https://github.com/karun99/neural-harness) | Validation harness engine + JOSS editorial bot | ✅ 95/100 · JOSS-ready |
+| [samvit](https://github.com/karun99/samvit) | Local-first personal AI — accuracy marker + 14-check guardrails | ✅ 95/100 · JOSS-ready |
+| [s-ai](https://github.com/karun99/s-ai) · [s-ai-update](https://github.com/karun99/s-ai-update) | Multi-agent swarm · synthetic executive · security-hardened execution | ✅ 95/100 · JOSS-ready |
+| [s-ai-soulbot](https://github.com/karun99/s-ai-soulbot) | Agentic AI companion — v3.0 SRS + Appendices A–H, 136 tests, T0–T6 conformance | ✅ 95/100 · JOSS-ready |
+| [glama-mcp](https://github.com/karun99/glama-mcp) | Dependency-free MCP gateway server | ✅ 95/100 · JOSS-ready |
+| [health-quest](https://github.com/karun99/health-quest) | Ethics-first educational food-literacy game (student co-author) | ✅ 95/100 · release-track |
 
-A self-hosted, intelligence-first AI coworker that reasons across a multi-agent swarm, thinks *and* acts through a policy-gated execution layer, and ships with desktop installers, scheduled jobs, reach channels, a credentials vault, and simulated-organoid intelligence (SOI).
-
-```
-s-ai ask "Should we migrate to microservices?"
-openworker run "Refactor the auth module"
-openworker jobs            # scheduled automations
-openworker vault           # encrypted credentials
-s-ai daemon                # resident worker service
-```
-
-**Core Features:**
-- 🤖 7-agent swarm (Orchestrator → Researcher → Analyst → Critic → Synthesizer → Action Planner → Executor)
-- ⚡ Execution Engine with risk-rated approval gates
-- 🛡️ Security hardening — SSRF protection, filesystem & shell sandboxing, bearer-token auth, rate limiting
-- 🧠 Integrated OpenWorker harness (daemon, jobs, reach, vault, policy)
-- 🔬 Simulated Organoid Intelligence (SOI) for memory consolidation
-- 🧠 Knowledge graph persistence + neural persona (Digital Twin) adaptation
-- 🔌 MCP server + client integration (incl. MCP Builder & Skill Creator)
-- 🌐 20+ AI providers (OpenRouter, OpenAI, Anthropic, Ollama, etc.)
-
-**Stack:** TypeScript · Node.js · ESM · MIT License
-
-</td>
-<td width="50%" valign="top">
-
-### [![Collabuild](https://img.shields.io/badge/Collabuild-v1.0-22c55e?style=for-the-badge&logo=python&logoColor=white)](https://github.com/karun99/Collabuild)
-
-**Research Paper → Production Pipeline**
-
-Multi-agent system that transforms research papers into runnable applications through a 10-stage pipeline.
-
-**Pipeline Stages:**
-```
-Paper → SRS → Modules → UX → SDLC
-  → Code → Debug → Deploy → Review → README
-```
-
-**Features:**
-- 🏗️ DevSRS: Materializes SRS into CLI/FastAPI/MCP apps
-- 🤖 Autonomous agent runner with tool use
-- 🌍 Indian language NLP via Bhashini AI
-- 🖥️ KoboldCPP-style web UI
-- 🔌 OpenRouter, NVIDIA, Claude, Ollama support
-
-**Stack:** Python · FastAPI · Docker · MIT License
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### [![Celebrum](https://img.shields.io/badge/Celebrum-0.1.0-8b5cf6?style=for-the-badge&logo=python&logoColor=white)](https://github.com/karun99/celebrum)
-
-**A Local-First Artificial Brain**
-
-A zero-dependency, pure-Python cognitive layer that grows a permanent personal memory (neuron/synapse knowledge graph in SQLite), learns a persona from it, and answers *as you* — guarded by a consent-first guardrail engine and a truth engine.
-
-```
-celebrum init --demo
-celebrum recall "privacy"
-celebrum persona
-celebrum simulate "should we log every keystroke?"
-celebrum validate
-```
-
-**Core Features:**
-- 🧠 Neuron/synapse memory graph — tiered, time-decaying recall
-- 🪞 Identity-grounded recall + evidential persona (PGMem)
-- 🛡️ Truth engine + consent-first guardrails (DPDP/GDPR, right to erasure)
-- 🔬 6-check neural validation harness — recall @10k neurons < 500 ms
-- 🖥️ CLI + local dashboard + MCP server — nothing leaves your device
-
-**Stack:** Python · SQLite · stdlib only · CC BY 4.0
-
-</td>
-<td width="50%" valign="top">
-
-### Quick Links
-
-| Link | What |
-|------|------|
-| [README](https://github.com/karun99/celebrum) | Install & quick tour |
-| [Validation](https://github.com/karun99/celebrum/blob/main/docs/VALIDATION.md) | 6-check harness + research mapping |
-| [SRS](https://github.com/karun99/celebrum/blob/main/docs/SRS.md) | Full specification |
-
-> *Not just code — a memory. For my love, Celebrity.*
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [![S-AI SoulBot](https://img.shields.io/badge/S--AI%20SoulBot-v3.0-10b981?style=for-the-badge&logo=node.js&logoColor=white)](https://github.com/karun99/s-ai-soulbot)
-
-**Agentic AI Companion · Jātaka-Aligned Guardrails**
-
-A TypeScript/React AI companion (v3.0.0) with a full engineering document set — SRS + Appendices A–H covering glossary, data schemas, threat matrix, Jātaka guardrail registry, literature review, case studies, test protocol, and deployment. Ships with a formal conformance model: **7 tiers (T0–T6)** over **4 invariants**, **23 Jātaka guardrails**, and **136 passing tests** across 11 suites.
-
-```
-npm run verify   # lint + typecheck + test + build
-```
-
-**Stack:** TypeScript · React · Zod · Node ≥ 20 · MIT License
-
-</td>
-<td width="50%" valign="top">
-
-### [![Prompts & MCP](https://img.shields.io/badge/Prompts%20%26%20MCP-Glama.ai-6366f1?style=for-the-badge)](/prompts-and-mcp.html)
-
-**Model Context Protocol Index**
-
-Every neural-network project is published on **Glama.ai** as an MCP server under the `karun99` namespace:
-
-- 🧠 [Celebrum](https://glama.ai/mcp/servers/karun99/celebrum) — LIVE listing (persona + memory graph + truth engine tools)
-- 🔌 [glama-mcp](https://glama.ai/mcp/servers/karun99/glama-mcp) — dependency-free MCP gateway
-- ⚙️ [S-AI](https://glama.ai/mcp/servers/karun99/s-ai) · [S-AI-Update](https://glama.ai/mcp/servers/karun99/s-ai-update)
-- 🤖 [S-AI-SoulBot](https://glama.ai/mcp/servers/karun99/s-ai-soulbot) · [neural-harness](https://glama.ai/mcp/servers/karun99/neural-harness)
-- and **15+ more** AI projects — see the full index: [karun99.github.io/prompts-and-mcp.html](https://karun99.github.io/prompts-and-mcp.html)
-
-> New listings are indexed by the Glama crawler within ~24h of claiming each repo.
-
-</td>
-</tr>
-</table>
+Submissions are tracked by the [JOSS editorial bot](https://github.com/karun99/neural-harness/actions/workflows/joss-editorial.yml), which also handles `check` (readiness) and `submit` (issue creation on `openjournals/joss-reviews`) modes.
 
 ---
 
@@ -268,7 +172,7 @@ _Rows below are generated and **updated automatically every 6 hours** — badges
 ### Live project readiness
 
 <!-- TRL-TABLE -->
-_Last updated: 2026-10-12 14:09 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
+_Last updated: 2026-10-12 15:29 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
 | Project | TRL Level | Efficiency | Live Signals |
 |---------|-----------|------------|--------------|
 | 🚀 [**s-ai**](https://github.com/karun99/s-ai) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `82/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
@@ -276,7 +180,6 @@ _Last updated: 2026-10-12 14:09 UTC · recomputed automatically every 6 hours by
 | 🚀 [**arthai**](https://github.com/karun99/arthai) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**buildbot**](https://github.com/karun99/buildbot) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**celebrum**](https://github.com/karun99/celebrum) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
-| 🚀 [**CodeQuest**](https://github.com/karun99/CodeQuest) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**Collabuild**](https://github.com/karun99/Collabuild) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**glama-mcp**](https://github.com/karun99/glama-mcp) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**health-quest**](https://github.com/karun99/health-quest) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
@@ -286,88 +189,83 @@ _Last updated: 2026-10-12 14:09 UTC · recomputed automatically every 6 hours by
 | 🚀 [**samvit**](https://github.com/karun99/samvit) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 🛡️ License · ⚡ Active |
 | 🏭 [**s-ai-update**](https://github.com/karun99/s-ai-update) | ![TRL 7: Realistic Environment Demo](https://img.shields.io/badge/TRL%207-Realistic%20Environment%20Demo-22c55e?style=flat-square) | `72/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
+| ✅ [**CodeQuest**](https://github.com/karun99/CodeQuest) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 
 <sub>Efficiency 0–100 = live-weighted validation score. Docs & license · code/entry-point maturity · CI/CD, releases, Docker & live deployment · automated tests & green CI · stars, forks, contributors & age.</sub>
 <!-- /TRL-TABLE -->
 
 ---
 
-## 🛠️ Projects
+## 📚 All repositories
 
-| Project | Description | Stack | Status |
-|---------|-------------|-------|--------|
-| [**neural-harness**](https://github.com/karun99/neural-harness) | Validation harness engine for neural software + JOSS editorial bot (TRL 95) | Python, stdlib | ✅ JOSS-ready |
-| [**samvit**](https://github.com/karun99/samvit) | Local-first personal AI, accuracy marker + 14-check guardrails (TRL 95) | Python, SQLite | ✅ JOSS-ready |
-| [**glama-mcp**](https://github.com/karun99/glama-mcp) | Dependency-free MCP server for the Glama OpenAI-compatible gateway (TRL 95) | Python, MCP | ✅ JOSS-ready |
-| [**s-ai-soulbot**](https://github.com/karun99/s-ai-soulbot) | Agentic AI companion v3.0 — Jātaka guardrails, SRS + Appendices A–H | TypeScript, React, Zod | ✅ v3.0 · Active |
-| [**health-quest**](https://github.com/karun99/health-quest) | Ethics-first food-literacy game for students (educational release-track) | HTML, Python | ✅ Active |
-| [**AI Studio**](https://github.com/karun99/aistudio) | AI video generation, stock images, usage analytics | Next.js, React, FastAPI | ✅ Active |
-| [**BlogBot**](https://github.com/karun99/blogbot) | Automated AI blog generation — WordPress plugin + cloud web app | PHP, Node.js, Express, Docker | ✅ Active |
-| [**Prompt Code**](https://github.com/karun99/prompt-code) | Prompt engineering challenge platform with AI evaluation | Node.js, Express, Netlify | ✅ Active |
-| [**Tut Hub**](https://github.com/karun99/tut-hub) | Tutor & learning management platform | React, Supabase, Netlify | ✅ Active |
-| [**Study Buddy**](https://github.com/karun99/study-buddy-next) | AI study companion with gamified learning | Next.js, Tailwind CSS | ✅ Active |
-| [**You AI Engine**](https://github.com/karun99/you-ai-engine) | AI backend engine with auth, projects, content generation | TypeScript, Express | ✅ Active |
-| [**HelixDB**](https://github.com/karun99/HelixDB) | Database project | Backend | ✅ Active |
-| [**SWOTIFY**](https://github.com/karun99/SWOTIFY) | Full-stack web application | Backend, Frontend | ✅ Active |
-| [**AnvayaOS**](https://github.com/karun99/AnvayaOS) | Custom Linux distribution | Docker, Shell | ✅ Active |
-| [**Security**](https://github.com/karun99/security) | Security definitions, incidents, and mitigations | YAML, Python | ✅ Active |
-| [**Portfolio**](https://github.com/karun99/portfolio) | Personal portfolio website | HTML | ✅ Active |
-| [**Demo**](https://github.com/karun99/demo) | Demo application | React, Vite | ✅ Active |
-| [**GKAcad**](https://github.com/karun99/gkacad) | Education platform | HTML, JavaScript | ✅ Active |
-| [**Main App**](https://github.com/karun99/main_app) | Chess application | HTML, JavaScript | ✅ Active |
-| [**YouSwarm**](https://github.com/karun99/YouSwarm-FullStack) | Full-stack swarm application | Netlify, JavaScript | ✅ Active |
+Grouped by purpose. Links go to the live repository.
 
----
+**AI systems & agents**
 
-## 💡 Technical Focus
+| Repository | What it is |
+|---|---|
+| [s-ai-update](https://github.com/karun99/s-ai-update) | S-AI v6.1 — Synthetic Executive / Integrated OpenWorker |
+| [s-ai](https://github.com/karun99/s-ai) | S-AI v5.1 — multi-agent swarm intelligence |
+| [s-ai-soulbot](https://github.com/karun99/s-ai-soulbot) | Consent-gated companion harness (T0–T6 conformance) |
+| [samvit](https://github.com/karun99/samvit) | Local-first personal AI — memory graph + guardrails |
+| [celebrum](https://github.com/karun99/celebrum) | Local-first artificial brain — persona + memory + truth engine |
+| [FRND4U](https://github.com/karun99/FRND4U) | Private, keyless AI companion chat on free OpenRouter models |
+| [Duet--Digital-Twin-Technology](https://github.com/karun99/Duet--Digital-Twin-Technology) | Your AI twin in a browser — private by design |
+| [gemini-ai-chatbot](https://github.com/karun99/gemini-ai-chatbot) | Gemini-powered chat application |
+| [you-ai-engine](https://github.com/karun99/you-ai-engine) | AI backend engine — auth, projects, content generation |
+| [autonomous-hackathon-agent](https://github.com/karun99/autonomous-hackathon-agent) | Autonomous agent for hackathon workflows |
 
-<table>
-<tr>
-<td>
+**Multi-agent systems, validation & MCP**
 
-**AI & Autonomy**
-- Multi-agent systems (MAS)
-- Autonomous execution with approval gates
-- Tool orchestration & risk assessment
-- Knowledge graphs & memory systems
+| Repository | What it is |
+|---|---|
+| [Collabuild](https://github.com/karun99/Collabuild) | Paper → prototype MAS with a 10-stage pipeline |
+| [buildbot](https://github.com/karun99/buildbot) | Research paper → SRS → checklist → working code |
+| [neural-harness](https://github.com/karun99/neural-harness) | Validation engine + JOSS editorial bot |
+| [glama-mcp](https://github.com/karun99/glama-mcp) | Dependency-free MCP gateway server |
 
-</td>
-<td>
+**Research, data & commerce**
 
-**Platforms & Languages**
-- TypeScript / Node.js (primary)
-- Python / FastAPI
-- React / Next.js
-- Docker / Edge deployment
+| Repository | What it is |
+|---|---|
+| [arthai](https://github.com/karun99/arthai) | Agentic commerce gateway for MSMEs |
+| [HelixDB](https://github.com/karun99/HelixDB) | Adaptive research & learning companion |
+| [ai-content-studio](https://github.com/karun99/ai-content-studio) | AI content generation + knowledge management |
 
-</td>
-<td>
+**Education & learning**
 
-**Infrastructure**
-- MCP (Model Context Protocol) — 2 live servers, 10 tools, 9 projects wired
-- OpenRouter / Ollama / Local LLMs
-- Edge AI (Raspberry Pi, ARM)
-- Zero-inference-cost architectures
+| Repository | What it is |
+|---|---|
+| [health-quest](https://github.com/karun99/health-quest) | Ethics-first food-literacy game |
+| [techlearn](https://github.com/karun99/techlearn) | M.Tech study materials — notes, PYQs, topic content |
+| [teddy-techlearn](https://github.com/karun99/teddy-techlearn) | AI-enhanced M.Tech learning hub |
+| [CodeQuest](https://github.com/karun99/CodeQuest) | Coding/debugging assessment platform |
+| [ScholarSync](https://github.com/karun99/ScholarSync) | Research/study sync tool |
+| [QuestWrite](https://github.com/karun99/QuestWrite) | Writing/learning app |
+| [plastic-waste-conservation](https://github.com/karun99/plastic-waste-conservation) | Environmental education platform |
+| [APSET-Hub](https://github.com/karun99/APSET-Hub) | Exam-preparation hub |
+| [tut-hub](https://github.com/karun99/tut-hub) | Tutoring & learning management |
 
-</td>
-</tr>
-</table>
+**Web, portfolio & experiments**
+
+[aistudio](https://github.com/karun99/aistudio) · [blogbot](https://github.com/karun99/blogbot) · [prompt-code](https://github.com/karun99/prompt-code) · [SWOTIFY](https://github.com/karun99/SWOTIFY) · [anvaya](https://github.com/karun99/anvaya) · [Arogya](https://github.com/karun99/Arogya) · [Arogya-Vedha-](https://github.com/karun99/Arogya-Vedha-) · [nrcm](https://github.com/karun99/nrcm) · [karun99.github.io](https://github.com/karun99/karun99.github.io) · [nskcsp.github.io](https://github.com/karun99/nskcsp.github.io) · [aios](https://github.com/karun99/aios) · [client](https://github.com/karun99/client) · [appidea](https://github.com/karun99/appidea) · [data](https://github.com/karun99/data) · [collabuild-1](https://github.com/karun99/collabuild-1)
+
+<sub>See all 43 repositories at [github.com/karun99?tab=repositories](https://github.com/karun99?tab=repositories).</sub>
 
 ---
 
-## 📊 GitHub Stats
+## 💡 Technical focus
 
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=karun99&show_icons=true&theme=radical&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=karun99&layout=compact&theme=radical&hide_border=true)
-
-</div>
+| AI & autonomy | Platforms & languages | Infrastructure |
+|---|---|---|
+| Multi-agent systems (MAS) | TypeScript / Node.js (primary) | MCP — 2 live servers, 10 tools, 9 projects wired |
+| Autonomous execution + approval gates | Python / FastAPI | OpenRouter · Ollama · local LLMs |
+| Tool orchestration & risk assessment | React / Next.js | Edge AI (Raspberry Pi, ARM) |
+| Knowledge graphs & memory systems | Docker / edge deployment | Zero-inference-cost architectures |
 
 ---
 
-## 🎯 Current Focus
+## 🎯 Current focus
 
 Building **S-AI v6.1** — a production-hardened **Artificial Mind** that runs as an **Integrated OpenWorker**. The swarm thinks *and* acts through risk-rated, policy-gated execution, while the OpenWorker harness (daemon, scheduled jobs, reach channels, encrypted vault) lets it work reliably on your own hardware. v6.1 adds security hardening (SSRF protection, sandboxing, auth, rate limiting) covered by CI (gitleaks, OSV-Scanner, govulncheck, Semgrep, npm audit).
 
@@ -379,16 +277,9 @@ Building **S-AI v6.1** — a production-hardened **Artificial Mind** that runs a
 
 ---
 
-## 📫 Let's Connect
+## 📫 Let's connect
 
 Offering **project assistance** (architecture, CI/CD, tests, docs, and JOSS/open-source publication support) and **research assistance** (literature reviews, experimental design, manuscript preparation) for Agentic AI, multi-agent systems, digital twins, and AI education.
-
-I'm always interested in:
-- 🤝 Collaborating on AI/ML research & open-source projects
-- 💡 Project assistance — take a prototype to a publishable, JOSS-ready repository
-- 🔬 Research assistance — design, validation, and write-up support
-- 🎤 Speaking at meetups/conferences
-- 📧 Consulting on multi-agent systems
 
 [![Email](https://img.shields.io/badge/✉️-saikarun085%40gmail.com-ea4335?style=flat-square)](mailto:saikarun085@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/💼-LinkedIn-0a66c2?style=flat-square)](https://linkedin.com/in/saikarun)
