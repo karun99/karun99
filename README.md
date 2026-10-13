@@ -42,9 +42,9 @@ Autonomous AI systems — multi-agent swarms that collaborate on complex tasks, 
 
 | | |
 |---|---|
-| **Public repositories** | 43 |
-| **Projects at TRL 8** (release-ready, fully validated) | 13 of 15 tracked |
-| **Live MCP servers** | 2 servers · 10 tools (stdio) |
+| **Public repositories** | 44 |
+| **Projects at TRL 8** (release-ready, fully validated) | 13 of 16 tracked |
+| **Live MCP servers** | 3 servers · 14 tools (stdio) |
 | **MCP servers graded on the M8ven Trust Index** | 4 (grade **B** · 89/100 · verified publisher) |
 | **Repositories prepared for JOSS** | 6 |
 | **Current flagship** | **S-AI v6.1** — Synthetic Executive / Integrated OpenWorker |
@@ -66,6 +66,7 @@ One project per row. **Stack**, whether it ships an **MCP** server, and its curr
 | [**celebrum**](https://github.com/karun99/celebrum) | Local-first artificial brain — persona model + neuron/synapse memory graph + truth engine + guardrails | Python · SQLite | ✅ | 8 |
 | [**neural-harness**](https://github.com/karun99/neural-harness) | Shared validation engine + JOSS editorial bot measuring information-handling & synthesis accuracy | Python | ✅ | 8 |
 | [**glama-mcp**](https://github.com/karun99/glama-mcp) | Dependency-free MCP server for the Glama OpenAI-compatible gateway (list, chat, stream, status) | Python · stdlib | ✅ | 8 |
+| [**zoe**](https://github.com/karun99/zoe) | **Project Zoe** — connectome-based reservoir-computing companion: 11 biologically-inspired layers, evolving LoRA, virtual avatar, sandboxed MicroVM, companion mode | Python | ✅ | 5 |
 | [**Collabuild**](https://github.com/karun99/Collabuild) | Multi-agent pipeline: research paper → SRS → modules → code → deploy → README | Python · FastAPI | — | 8 |
 | [**buildbot**](https://github.com/karun99/buildbot) | Student AI coding assistant: research paper → SRS → checklist → working code | Python | — | 8 |
 | [**arthai**](https://github.com/karun99/arthai) | Agentic commerce gateway for MSMEs — 6-layer financial governance + adaptive security | Python | — | 8 |
@@ -81,14 +82,15 @@ Also on GitHub: [FRND4U](https://github.com/karun99/FRND4U) · [Duet — Digital
 
 ## 🔌 MCP Servers
 
-### Live processes — 2 servers · 10 tools
+### Live processes — 3 servers · 14 tools
 
-Two **Model Context Protocol** servers run locally and answer a real `initialize` + `tools/list` handshake. Both `stdio`, both MIT-licensed.
+Three **Model Context Protocol** servers run locally and answer a real `initialize` + `tools/list` handshake. All `stdio`, all MIT-licensed.
 
 | Server | Version | Tools | Transport | Runtime | Source |
 |---|---|:--:|:---:|---|---|
 | **`glama-gateway`** | 1.0.0 | **4** | stdio | Python 3.9+, **stdlib only**, zero dependencies | [karun99/glama-mcp](https://github.com/karun99/glama-mcp) |
 | **`s-ai-swarm`** | 3.0.1 | **6** | stdio | Node.js / TypeScript, MCP + resources + prompts | [karun99/s-ai-update](https://github.com/karun99/s-ai-update) |
+| **`zoe-mcp`** | 4.0.0 | **4** | stdio | Python 3.10+, **stdlib only**, dependency-free | [karun99/zoe](https://github.com/karun99/zoe) |
 
 **`glama-gateway` — 4 tools** · one key, one endpoint for every model, fronting the Glama AI gateway (`https://gateway.glama.ai/v1`, OpenAI-compatible, 100+ models):
 
@@ -110,12 +112,21 @@ Two **Model Context Protocol** servers run locally and answer a real `initialize
 | `graph_stats` | Knowledge-graph statistics |
 | `bias_analysis` | Analyze text for potential biases |
 
+**`zoe-mcp` — 4 tools** · Project Zoe's connectome companion as a tool surface (run, evaluate, introspect):
+
+| Tool | Purpose |
+|---|---|
+| `zoe_run` | Run one 13-step interaction; returns her answer, routed agent and growth signal |
+| `zoe_report` | Run the evolution loop + 7-tier evaluation; returns the pass/fail summary |
+| `zoe_layers` | List the eleven layers and their roles |
+| `zoe_identity` | Return Zoe's persistent identity card |
+
 ```bash
 pip install .            # in glama-mcp/ — dependency-free
 export GLAMA_API_KEY=…   # one credential covers every model
 ```
 
-Both are registered per-project through a committed `.mcp.json` — the same file in **9 repositories**: [s-ai-soulbot](https://github.com/karun99/s-ai-soulbot) · [neural-harness](https://github.com/karun99/neural-harness) · [samvit](https://github.com/karun99/samvit) · [celebrum](https://github.com/karun99/celebrum) · [Collabuild](https://github.com/karun99/Collabuild) · [health-quest](https://github.com/karun99/health-quest) · [teddy-techlearn](https://github.com/karun99/teddy-techlearn) · [glama-mcp](https://github.com/karun99/glama-mcp) · [karun99.github.io](https://github.com/karun99/karun99.github.io).
+All are registered per-project through a committed `.mcp.json` — the same file in **10 repositories**: [s-ai-soulbot](https://github.com/karun99/s-ai-soulbot) · [neural-harness](https://github.com/karun99/neural-harness) · [samvit](https://github.com/karun99/samvit) · [celebrum](https://github.com/karun99/celebrum) · [Collabuild](https://github.com/karun99/Collabuild) · [health-quest](https://github.com/karun99/health-quest) · [teddy-techlearn](https://github.com/karun99/teddy-techlearn) · [glama-mcp](https://github.com/karun99/glama-mcp) · [karun99.github.io](https://github.com/karun99/karun99.github.io) · [zoe](https://github.com/karun99/zoe).
 
 ### Graded on the M8ven Trust Index — 4 servers
 
@@ -223,6 +234,7 @@ Grouped by purpose. Links go to the live repository.
 | [buildbot](https://github.com/karun99/buildbot) | Research paper → SRS → checklist → working code |
 | [neural-harness](https://github.com/karun99/neural-harness) | Validation engine + JOSS editorial bot |
 | [glama-mcp](https://github.com/karun99/glama-mcp) | Dependency-free MCP gateway server |
+| [zoe](https://github.com/karun99/zoe) | Connectome-based reservoir-computing companion (11 layers, MCP server) |
 
 **Research, data & commerce**
 
