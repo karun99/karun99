@@ -13,13 +13,34 @@ I build autonomous AI systems that think, plan, and act — and that can be inde
 [![Email](https://img.shields.io/badge/📧-Email-ea4335?style=for-the-badge)](mailto:saikarun085@gmail.com)
 [![npm](https://img.shields.io/badge/📦-npm-cb3837?style=for-the-badge)](https://www.npmjs.com/package/@saikarun/s-ai)
 
+**44 public repositories · 13 projects at TRL 8 · 19 MCP servers indexed across Glama.ai & the M8ven Trust Index**
+
 </div>
+
+---
+
+## 📊 GitHub in numbers
+
+<div align="center">
+
+<a href="https://github.com/karun99?tab=repositories"><img height="165" src="https://github-readme-stats.vercel.app/api?username=karun99&show_icons=true&include_all_commits=true&hide=stars,contribs&rank_icon=github&hide_border=true&theme=tokyonight&title_color=6366f1&icon_color=eab308" alt="karun99's GitHub statistics" /></a>
+<a href="https://github.com/karun99?tab=repositories"><img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=karun99&layout=compact&langs_count=8&hide_border=true&theme=tokyonight&title_color=6366f1" alt="Most used languages" /></a>
+
+<img src="https://streak-stats.demolab.com/?user=karun99&hide_border=true&theme=tokyonight&ring=6366f1&fire=eab308&currStreakLabel=6366f1" alt="Contribution streak" />
+
+<img src="https://komarev.com/ghpvc/?username=karun99&label=PROFILE%20VIEWS&style=flat-square&color=6366f1" alt="Profile views" />
+
+</div>
+
+> Live cards from **GitHub Readme Stats** & **GitHub Streak Stats** — the dynamic widgets used by [GPRM](https://gprm.itsvg.in/) and [GitSkins](https://www.gitskins.com/). They refresh automatically as the repositories evolve.
 
 ---
 
 ## Contents
 
+- [GitHub in numbers](#-github-in-numbers)
 - [What I build](#-what-i-build)
+- [Tech stack](#-tech-stack)
 - [At a glance](#-at-a-glance)
 - [Flagship projects](#-flagship-projects)
 - [MCP servers](#-mcp-servers)
@@ -35,6 +56,21 @@ I build autonomous AI systems that think, plan, and act — and that can be inde
 ## 🚀 What I build
 
 Autonomous AI systems — multi-agent swarms that collaborate on complex tasks, and execution engines that act on your behalf behind risk-rated approval gates. Every flagship project ships with **automated validation, transparent metrics, and a reproducible evaluation harness**, so the claims in this profile are reproducible from the code.
+
+### 🧰 Tech stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
