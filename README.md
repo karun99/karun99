@@ -9,7 +9,7 @@ I build autonomous AI systems that think, plan, and act — and that can be inde
 [![Website](https://img.shields.io/badge/🌐-karun99.github.io-6366f1?style=for-the-badge)](https://karun99.github.io)
 [![MCP Servers](https://img.shields.io/badge/🔌-MCP%20Servers-22c55e?style=for-the-badge)](https://karun99.github.io/prompts-and-mcp.html)
 [![ORCID](https://img.shields.io/badge/🔬-ORCID%200009--0007--9218--9750-a6ce39?style=for-the-badge)](https://orcid.org/0009-0007-9218-9750)
-[![LinkedIn](https://img.shields.io/badge/💼-LinkedIn-0a66c2?style=for-the-badge)](https://linkedin.com/in/saikarun)
+[![LinkedIn](https://img.shields.io/badge/💼-LinkedIn-0a66c2?style=for-the-badge)](https://www.linkedin.com/in/sai-karun-5a96a8b9)
 [![Email](https://img.shields.io/badge/📧-Email-ea4335?style=for-the-badge)](mailto:saikarun085@gmail.com)
 [![npm](https://img.shields.io/badge/📦-npm-cb3837?style=for-the-badge)](https://www.npmjs.com/package/@saikarun/s-ai)
 
@@ -346,7 +346,7 @@ Building **S-AI v6.1** — a production-hardened **Artificial Mind** that runs a
 Offering **project assistance** (architecture, CI/CD, tests, docs, and JOSS/open-source publication support) and **research assistance** (literature reviews, experimental design, manuscript preparation) for Agentic AI, multi-agent systems, digital twins, and AI education.
 
 [![Email](https://img.shields.io/badge/✉️-saikarun085%40gmail.com-ea4335?style=flat-square)](mailto:saikarun085@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/💼-LinkedIn-0a66c2?style=flat-square)](https://linkedin.com/in/saikarun)
+[![LinkedIn](https://img.shields.io/badge/💼-LinkedIn-0a66c2?style=flat-square)](https://www.linkedin.com/in/sai-karun-5a96a8b9)
 [![Twitter](https://img.shields.io/badge/🐦-@saikarun-1da1f2?style=flat-square)](https://twitter.com/saikarun)
 [![ResearchGate](https://img.shields.io/badge/🔬-ResearchGate-00ccbb?style=flat-square)](https://www.researchgate.net/profile/Sai-Karun-Nandipati)
 
