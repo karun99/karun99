@@ -92,7 +92,7 @@ The dashboard opens at `http://127.0.0.1:8477`; `celebrum-app stop`, `status`, `
 |---|---|
 | **Public repositories** | 47 |
 | **Projects at TRL 8** (release-ready, fully validated) | 7 of 16 tracked |
-| **Live MCP servers** | 3 servers · 14 tools (stdio) |
+| **Live MCP servers** | 3 servers · 17 tools (stdio) |
 | **MCP servers indexed** | **19** submitted to [Glama.ai](https://glama.ai/mcp/servers?query=karun99) (2 live) · **19** scored on the [M8ven Trust Index](https://m8ven.ai/publisher/karun99) (4 live-verified, grade **B** · 89/100) |
 | **Repositories prepared for JOSS** | 6 |
 | **Mobile app** | **Celebrum on Android** — one-command Termux install, widget, boot autostart, notifications |
@@ -115,7 +115,7 @@ One project per row. **Stack**, whether it ships an **MCP** server, and its curr
 | [**celebrum**](https://github.com/karun99/celebrum) | Local-first artificial brain — persona model + neuron/synapse memory graph + truth engine + guardrails, now a one-command Android/Termux app | Python · SQLite · Termux | ✅ | 8 |
 | [**neural-harness**](https://github.com/karun99/neural-harness) | Shared validation engine + JOSS editorial bot measuring information-handling & synthesis accuracy | Python | ✅ | 8 |
 | [**glama-mcp**](https://github.com/karun99/glama-mcp) | Dependency-free MCP server for the Glama OpenAI-compatible gateway (list, chat, stream, status) | Python · stdlib | ✅ | 8 |
-| [**zoe**](https://github.com/karun99/zoe) | **Project Zoe** — connectome-based reservoir-computing companion: 11 biologically-inspired layers, evolving LoRA, virtual avatar, sandboxed MicroVM, companion mode | Python | ✅ | 5 |
+| [**zoe**](https://github.com/karun99/zoe) | **Project Zoe** — connectome-based reservoir-computing companion: 11 biologically-inspired layers, evolving LoRA, virtual avatar, sandboxed MicroVM, companion mode, and **Emoja**, its consented non-diagnostic reflection layer | Python | ✅ | 5 |
 | [**Collabuild**](https://github.com/karun99/Collabuild) | Multi-agent pipeline: research paper → SRS → modules → code → deploy → README | Python · FastAPI | — | 8 |
 | [**buildbot**](https://github.com/karun99/buildbot) | Student AI coding assistant: research paper → SRS → checklist → working code | Python | — | 8 |
 | [**arthai**](https://github.com/karun99/arthai) | Agentic commerce gateway for MSMEs — 6-layer financial governance + adaptive security | Python | — | 8 |
@@ -129,9 +129,47 @@ Also on GitHub: [FRND4U](https://github.com/karun99/FRND4U) · [Duet — Digital
 
 ---
 
+## 🧿 Emoja — Zoe's reflection layer
+
+**Emoja is the reflection layer of Project Zoe: Zoe's reservoir/LoRA layers evolve underneath, Emoja reflects safely on top. It is not therapy, emotion detection, or a diagnostic tool.**
+
+Emoja reads **only the user's own text** and mirrors it back as a compact card:
+
+- a 3–5 emoji sequence with one anchor emoji,
+- a 3–5 token hex palette blended in OKLCH,
+- a pattern described in words (band width = time, saturation = intensity, alpha = confidence, direction = sequence order),
+- a Shatkona balance check (three 0–1 axis pairs; any skew > 0.4 is named in the sentence),
+- a symbolic Kundalini max rung (`ground → feel → will → compassion → voice → insight`), and
+- exactly one plain reflection sentence — “this reads as…”, never “you are…”.
+
+**Trust boundary.** `SUNO` is the only agent that sees the raw turn; every other agent receives SUNO's typed reading. `DRISHTI` holds an **enforced** veto — a veto prevents `SETU` from assembling any aesthetic output. High distress drops colour/emoji/pattern; crisis drops the card entirely and responds plainly.
+
+```bash
+zoe emoja "I felt tired after the meeting but I am steady now"
+zoe emoja --json "I feel a little sad."
+zoe emoja --mas "I feel a little sad."       # show every agent
+zoe emoja                                     # interactive session
+zoe-emoja "I am overwhelmed"                  # same entry point
+```
+
+Commands: `/card`, `/save`, `/drop`, `/pause`, `/resume`, `/ground`, `/crisis`, `/mas on|off`, `/katha on|off`, `/consent`, `/help`, `/quit`.
+
+| Emoja status | Reality |
+|---|---|
+| Text-only pipeline, Emoja Card, consent/crisis paths | ✅ Implemented |
+| Self-check T1–T8 (`pytest tests/emoja -q`) | ✅ 8 passed |
+| Audit trace input → agents → output | ✅ Implemented (`--trace`) |
+| Real-Ollama end-to-end run | ⏳ Pending |
+| D1 guided mutation / Dunce < 0.20 | ❌ Not implemented |
+| D4 interviews with neurodivergent users | ❌ Not started |
+
+Full spec: [**docs/EMOJA.md**](https://github.com/karun99/zoe/blob/main/docs/EMOJA.md) · honest per-directive table: [**docs/ENFORCEMENT.md**](https://github.com/karun99/zoe/blob/main/docs/ENFORCEMENT.md).
+
+---
+
 ## 🔌 MCP Servers
 
-### Live processes — 3 servers · 14 tools
+### Live processes — 3 servers · 17 tools
 
 Three **Model Context Protocol** servers run locally and answer a real `initialize` + `tools/list` handshake. All `stdio`, all MIT-licensed.
 
@@ -139,7 +177,7 @@ Three **Model Context Protocol** servers run locally and answer a real `initiali
 |---|---|:--:|:---:|---|---|
 | **`glama-gateway`** | 1.0.0 | **4** | stdio | Python 3.9+, **stdlib only**, zero dependencies | [karun99/glama-mcp](https://github.com/karun99/glama-mcp) |
 | **`s-ai-swarm`** | 3.0.1 | **6** | stdio | Node.js / TypeScript, MCP + resources + prompts | [karun99/s-ai-update](https://github.com/karun99/s-ai-update) |
-| **`zoe-mcp`** | 4.0.0 | **4** | stdio | Python 3.10+, **stdlib only**, dependency-free | [karun99/zoe](https://github.com/karun99/zoe) |
+| **`zoe-mcp`** | 4.2.0 | **7** | stdio | Python 3.10+, **stdlib only**, dependency-free | [karun99/zoe](https://github.com/karun99/zoe) |
 
 **`glama-gateway` — 4 tools** · one key, one endpoint for every model, fronting the Glama AI gateway (`https://gateway.glama.ai/v1`, OpenAI-compatible, 100+ models):
 
@@ -161,14 +199,17 @@ Three **Model Context Protocol** servers run locally and answer a real `initiali
 | `graph_stats` | Knowledge-graph statistics |
 | `bias_analysis` | Analyze text for potential biases |
 
-**`zoe-mcp` — 4 tools** · Project Zoe's connectome companion as a tool surface (run, evaluate, introspect):
+**`zoe-mcp` — 7 tools** · Project Zoe's connectome companion as a tool surface (run, evaluate, introspect, reflect):
 
 | Tool | Purpose |
 |---|---|
 | `zoe_run` | Run one 13-step interaction; returns her answer, routed agent and growth signal |
 | `zoe_report` | Run the evolution loop + 7-tier evaluation; returns the pass/fail summary |
-| `zoe_layers` | List the eleven layers and their roles |
+| `zoe_layers` | List the eleven layers, their roles, and the Emoja module |
 | `zoe_identity` | Return Zoe's persistent identity card |
+| `emoja_reflect` | Reflect the user's own words as a consented Emoja Card (text-only; no diagnosis) |
+| `emoja_card` | Reprint the latest Emoja Card |
+| `emoja_drop` | Delete the latest Emoja Card (deleted means gone) |
 
 ```bash
 pip install .            # in glama-mcp/ — dependency-free
@@ -201,7 +242,7 @@ Every MCP server in this profile is submitted to **two independent registries**,
 | [Blogbot](https://github.com/karun99/blogbot) | blogbot | — | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/blogbot)](https://m8ven.ai/publisher/karun99) `D · 58` |
 | [Buildbot](https://github.com/karun99/buildbot) | buildbot | — | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/buildbot)](https://m8ven.ai/publisher/karun99) `F · 20` |
 | [ArthAI](https://github.com/karun99/arthai) | arthai | `5` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/arthai)](https://m8ven.ai/publisher/karun99) `C · 71` |
-| [Zoe](https://github.com/karun99/zoe) | zoe | `4` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/zoe)](https://m8ven.ai/publisher/karun99) `C · 74` |
+| [Zoe](https://github.com/karun99/zoe) | zoe | `7` | ⏳ [submitted](https://glama.ai/mcp/servers?query=karun99) | [![M8ven Score](https://m8ven.ai/badge/mcp/karun99/zoe)](https://m8ven.ai/publisher/karun99) `C · 74` |
 
 **Glama.ai** indexes the server from the repository (`glama.json` + the `mcp` / `model-context-protocol` topics) and captures the full tool schema alongside **license / quality / maintenance** grades. **M8ven** independently scans each repository (`Code Verified`, ~2 min) and, for connected repositories, re-verifies on **every code change** (`⚡` Live Monitored). Four servers hold **Verified Publisher** status (`B · 89/100`) on the [M8ven publisher page](https://m8ven.ai/publisher/karun99). A `—` in **Tools** marks a repository whose MCP tool surface M8ven has not detected yet.
 
@@ -299,7 +340,7 @@ Grouped by purpose. Links go to the live repository.
 | [buildbot](https://github.com/karun99/buildbot) | Research paper → SRS → checklist → working code |
 | [neural-harness](https://github.com/karun99/neural-harness) | Validation engine + JOSS editorial bot |
 | [glama-mcp](https://github.com/karun99/glama-mcp) | Dependency-free MCP gateway server |
-| [zoe](https://github.com/karun99/zoe) | Connectome-based reservoir-computing companion (11 layers, MCP server) |
+| [zoe](https://github.com/karun99/zoe) | Connectome-based reservoir-computing companion (11 layers, MCP server, Emoja reflection layer) |
 
 **Research, data & commerce**
 
@@ -335,7 +376,7 @@ Grouped by purpose. Links go to the live repository.
 
 | AI & autonomy | Platforms & languages | Infrastructure |
 |---|---|---|
-| Multi-agent systems (MAS) | TypeScript / Node.js (primary) | MCP — 3 live servers, 14 tools, 10 projects wired |
+| Multi-agent systems (MAS) | TypeScript / Node.js (primary) | MCP — 3 live servers, 17 tools, 10 projects wired |
 | Autonomous execution + approval gates | Python / FastAPI | OpenRouter · Ollama · local LLMs |
 | Tool orchestration & risk assessment | React / Next.js | Edge AI (Android/Termux, Raspberry Pi, ARM) |
 | Knowledge graphs & memory systems | Docker / edge deployment | Zero-inference-cost architectures |
