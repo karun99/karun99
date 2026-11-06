@@ -125,7 +125,7 @@ One project per row. **Stack**, whether it ships an **MCP** server, and its curr
 | [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | AI-enhanced M.Tech CSE learning hub — Teddy AI companion + persistent learner graph | HTML | — | 8 |
 | [**CodeQuest**](https://github.com/karun99/CodeQuest) | LAN-deployable coding/debugging assessment platform (anti-cheat, auto-scoring) | PHP · MySQL | — | 6 |
 
-Also on GitHub: [FRND4U](https://github.com/karun99/FRND4U) · [Duet — Digital Twin](https://github.com/karun99/Duet--Digital-Twin-Technology) · [techlearn](https://github.com/karun99/techlearn) · [QuestWrite](https://github.com/karun99/QuestWrite) · [ScholarSync](https://github.com/karun99/ScholarSync) · [plastic-waste-conservation](https://github.com/karun99/plastic-waste-conservation) — and the rest under [All repositories](#-all-repositories).
+Also on GitHub: [FRND4U](https://github.com/karun99/FRND4U) · [Duet — Digital Twin + MAS protocol](https://github.com/karun99/Duet--Digital-Twin-Technology) · [techlearn](https://github.com/karun99/techlearn) · [QuestWrite](https://github.com/karun99/QuestWrite) · [ScholarSync](https://github.com/karun99/ScholarSync) · [plastic-waste-conservation](https://github.com/karun99/plastic-waste-conservation) — and the rest under [All repositories](#-all-repositories).
 
 ---
 
@@ -164,6 +164,34 @@ Commands: `/card`, `/save`, `/drop`, `/pause`, `/resume`, `/ground`, `/crisis`, 
 | D4 interviews with neurodivergent users | ❌ Not started |
 
 Full spec: [**docs/EMOJA.md**](https://github.com/karun99/zoe/blob/main/docs/EMOJA.md) · honest per-directive table: [**docs/ENFORCEMENT.md**](https://github.com/karun99/zoe/blob/main/docs/ENFORCEMENT.md).
+
+---
+
+## 🎭 Duet — Digital Twin Technology
+
+**Duet is a private-by-design AI twin that runs in the browser and now carries an explicit MAS operating protocol — Six Hats, EMOJA, DUNCE, KUNDALINI and JATAKA — as a local policy layer, not a claim of server-side enforcement.**
+
+The protocol is applied before and after the model call:
+
+- **Six Hats** structures each turn (facts, risks, alternatives, intuition, benefits, synthesis).
+- **EMOJA** rewrites the final answer into a compact, non-diagnostic reflection card.
+- **DUNCE** maintains a local decision log of protocol events for audit.
+- **KUNDALINI** tracks the reasoning rung reached during a session.
+- **JATAKA** holds the reference guardrail registry used by the governor.
+
+**Honest trust boundary.** `KB-PRIMARY` blocks the model call when no ready knowledge-base node exists. Personal information is **off by default**; enabling it requires explicit consent, per-field approval, a local audit log, and local-only storage. `SITEMAP` and `INDEX` are declared-only modes; `REFRESH` is policy-only; G2 escalation routes to a human gate. None of these are presented as hard server-side guardrails.
+
+| Duet status | Reality |
+|---|---|
+| MAS modes, stage tracking, prompt builder, governor parsing | ✅ Implemented (`services/mas.ts`) |
+| KB-PRIMARY block before model call | ✅ Implemented (browser-local) |
+| PI consent, per-field approval, audit log, local-only storage | ✅ Implemented, **off by default** |
+| Six Hats prompting + EMOJA output rewrite | ✅ Implemented (prompt-level) |
+| DUNCE / audit log with JSON export | ✅ Implemented (local) |
+| Hard server-side guardrail enforcement | ❌ Not claimed — policy layer only |
+| Persistent cloud knowledge base | ❌ Not implemented — local only |
+
+Live: [**duet-digital-twin-technology.vercel.app**](https://duet-digital-twin-technology.vercel.app/) · [Hugging Face Space](https://saikarun-duet-digital-twin.static.hf.space) · Source: [**karun99/Duet--Digital-Twin-Technology**](https://github.com/karun99/Duet--Digital-Twin-Technology).
 
 ---
 
@@ -327,7 +355,7 @@ Grouped by purpose. Links go to the live repository.
 | [samvit](https://github.com/karun99/samvit) | Local-first personal AI — memory graph + guardrails |
 | [celebrum](https://github.com/karun99/celebrum) | Local-first artificial brain — persona + memory + truth engine, with a one-command Android/Termux app |
 | [FRND4U](https://github.com/karun99/FRND4U) | Private, keyless AI companion chat on free OpenRouter models |
-| [Duet--Digital-Twin-Technology](https://github.com/karun99/Duet--Digital-Twin-Technology) | Your AI twin in a browser — private by design |
+| [Duet--Digital-Twin-Technology](https://github.com/karun99/Duet--Digital-Twin-Technology) | Your AI twin in a browser — private by design, with a local MAS operating protocol (Six Hats, EMOJA, DUNCE, KUNDALINI, JATAKA) |
 | [gemini-ai-chatbot](https://github.com/karun99/gemini-ai-chatbot) | Gemini-powered chat application |
 | [you-ai-engine](https://github.com/karun99/you-ai-engine) | AI backend engine — auth, projects, content generation |
 | [autonomous-hackathon-agent](https://github.com/karun99/autonomous-hackathon-agent) | Autonomous agent for hackathon workflows |
