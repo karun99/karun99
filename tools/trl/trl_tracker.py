@@ -11,6 +11,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.parse
@@ -47,11 +48,25 @@ MANIFEST_FILES = frozenset((
 # Conventional entry-point filenames, matched on basename at any depth.
 ENTRY_FILES = frozenset((
     "main.py", "__main__.py", "app.py", "cli.py", "index.js", "index.ts",
-    "index.tsx", "main.go", "main.rs", "manage.py", "server.js", "server.ts",
+    "index.tsx", "index.html", "main.go", "main.rs", "manage.py", "server.js",
+    "server.ts", "wsgi.py", "asgi.py",
 ))
 
 # Conventional entry-point subpaths that are not literally named main/index.
 ENTRY_PREFIXES = ("bin/", "cmd/", "pkg/main.go", "src/main.", "src/index.")
+
+# Framework entry points: a Next.js App Router root layout is the file that
+# bootstraps every route, exactly as main() does for a library.
+FRAMEWORK_ENTRY_PREFIXES = ("app/layout.", "src/app/layout.")
+
+# Lockfiles are concrete evidence of an installable, reproducible dependency
+# graph. They stand in for repository size when judging code maturity, so a
+# small complete app is not penalised for being small.
+LOCK_FILES = frozenset((
+    "package-lock.json", "pnpm-lock.yaml", "yarn.lock", "bun.lockb",
+    "poetry.lock", "pipfile.lock", "uv.lock", "cargo.lock", "go.sum",
+    "composer.lock",
+))
 
 # Container definitions, matched on basename so nested paths (infra/Dockerfile)
 # count. Variants are recognised explicitly rather than by a loose prefix, so
@@ -59,6 +74,81 @@ ENTRY_PREFIXES = ("bin/", "cmd/", "pkg/main.go", "src/main.", "src/index.")
 # compose file.
 DOCKER_FILES = frozenset(("dockerfile", "docker-compose.yml", "compose.yaml", "compose.yml"))
 DOCKER_VARIANT_PREFIXES = ("docker-compose.", "compose.")
+
+# Workflows that actually validate the code. Dependabot/pages automation and
+# auxiliary jobs (security scanning, npm publishing, JOSS review) are separate
+# operations: a red security scan or an unpublished release must not be scored
+# as "the CI gate is failing".
+CI_WORKFLOW_HINTS = frozenset((
+    "ci", "test", "tests", "testing", "build", "builds", "lint",
+    "linter", "check", "checks", "validate", "validation",
+))
+
+
+def workflow_tokens(workflow: dict) -> set[str]:
+    """Return exact words from the workflow name and path."""
+    value = f"{workflow.get('name') or ''} {workflow.get('path') or ''}".lower()
+    return {token for token in re.split(r"[^a-z0-9]+", value) if token}
+
+
+def is_ci_workflow(workflow: dict) -> bool:
+    """True when a workflow is named for code validation or building."""
+    path = (workflow.get("path") or "").lower()
+    if path.startswith("dynamic/"):
+        return False
+    tokens = workflow_tokens(workflow)
+    explicit_validation = tokens & {
+        "ci", "test", "tests", "testing", "build", "builds", "lint",
+        "linter", "validate", "validation",
+    }
+    if "security" in tokens and not explicit_validation:
+        return False
+    return bool(tokens & CI_WORKFLOW_HINTS)
+
+
+def has_project_workflow(workflows: list[dict]) -> bool:
+    """True if the repo defines a workflow for code validation or builds.
+
+    GitHub's API always includes the implicit ``dynamic/`` Dependabot and Pages
+    pipelines; security, release, and deployment workflows alone also do not
+    establish a code-validation pipeline.
+    """
+    return any(is_ci_workflow(w) for w in workflows)
+
+
+def is_ci_run(run: dict) -> bool:
+    """True if the workflow run is a code-validation CI run.
+
+    Ignores Dependabot/Pages ``dynamic`` runs and requires a validation/build
+    token so an unrelated successful workflow cannot stand in for CI.
+    """
+    path = (run.get("path") or "").lower()
+    if run.get("event") == "dynamic" or path.startswith("dynamic/"):
+        return False
+    return is_ci_workflow(run)
+
+
+def ci_is_green(run_list: list[dict]) -> bool:
+    """True when the most recent meaningful CI run succeeded.
+
+    A successful deploy, release, or security scan is not evidence that code
+    validation passed, so runs without a validation/build workflow name do not
+    count as green.
+    """
+    ci_runs = [r for r in run_list
+               if is_ci_run(r)
+               and r.get("conclusion") not in (None, "cancelled", "skipped")]
+    return bool(ci_runs) and ci_runs[0].get("conclusion") == "success"
+
+
+def runs_for_default_branch(run_list: list[dict], branch: str) -> list[dict]:
+    """Keep only runs whose head branch is the repository's default branch.
+
+    Pull-request runs from Dependabot or a feature branch land in the same
+    workflow-runs feed. Scoring "latest CI" from that feed made a failing bump
+    PR look like the project's own CI was red on main.
+    """
+    return [r for r in run_list if r.get("head_branch") == branch]
 
 
 def is_manifest_path(path: str) -> bool:
@@ -70,7 +160,14 @@ def is_entry_path(path: str) -> bool:
     """True if the path is a conventional program entry point."""
     if os.path.basename(path) in ENTRY_FILES:
         return True
-    return any(path.startswith(prefix) for prefix in ENTRY_PREFIXES)
+    if any(path.startswith(prefix) for prefix in ENTRY_PREFIXES):
+        return True
+    return any(path.startswith(prefix) for prefix in FRAMEWORK_ENTRY_PREFIXES)
+
+
+def has_lockfile(paths) -> bool:
+    """True if any path is a dependency lockfile at any depth."""
+    return any(os.path.basename(path) in LOCK_FILES for path in paths)
 
 
 def is_docker_path(path: str) -> bool:
@@ -81,6 +178,29 @@ def is_docker_path(path: str) -> bool:
     if base.startswith("dockerfile."):
         return True
     return base.startswith(DOCKER_VARIANT_PREFIXES) and base.endswith((".yml", ".yaml"))
+
+
+TEST_DIR_SEGMENTS = frozenset(("test", "tests", "spec", "specs", "__tests__"))
+TEST_FILE_SUFFIXES = (
+    "_test.py", ".test.js", ".test.jsx", ".test.ts", ".test.tsx",
+    ".spec.js", ".spec.jsx", ".spec.ts", ".spec.tsx",
+)
+
+
+def is_test_path(path: str) -> bool:
+    """True if the path is a test file, at any depth.
+
+    The old check only matched ``test/`` and ``tests/`` at the repository root,
+    so a conventional nested layout such as ``api/tests/test_api.py`` or
+    ``backend/pkg/foo_test.py`` scored as having no tests at all.
+    """
+    parts = path.split("/")
+    if any(segment in TEST_DIR_SEGMENTS for segment in parts[:-1]):
+        return True
+    base = parts[-1]
+    if base.startswith("test_") and base.endswith(".py"):
+        return True
+    return base.endswith(TEST_FILE_SUFFIXES)
 
 
 def api(path: str, params: dict | None = None):
@@ -102,8 +222,35 @@ def api(path: str, params: dict | None = None):
         return {"__http_error__": -1}
 
 
+def api_retry(path: str, params: dict | None = None, attempts: int = 3):
+    """``api`` with a couple of retries for transient transport failures.
+
+    A dropped connection used to look like an empty repository: the tree call
+    returned an error dict, every file-layout signal became False, and the repo
+    silently lost up to 14 points. Retrying turns a flaky read into a slow read
+    instead of a wrong score.
+    """
+    result = None
+    for _ in range(attempts):
+        result = api(path, params)
+        if is_ok(result):
+            return result
+    return result
+
+
 def is_ok(value) -> bool:
     return isinstance(value, (list, dict)) and not (isinstance(value, dict) and "__http_error__" in value)
+
+
+def runs_query(default_branch: str) -> dict:
+    """Query parameters for the workflow-runs feed.
+
+    Filtering to the default branch keeps Dependabot and feature-branch runs
+    from crowding the recent-run window. On a busy repository the first page of
+    unfiltered runs can be entirely automated bumps, so no default-branch run
+    is visible even though CI is green on main.
+    """
+    return {"branch": default_branch, "per_page": 100, "status": "completed"}
 
 
 def analyze(owner: str, repo: str) -> dict | None:
@@ -111,25 +258,24 @@ def analyze(owner: str, repo: str) -> dict | None:
     if not isinstance(meta, dict) or "__http_error__" in meta or "full_name" not in meta:
         return None
 
+    branch = meta.get("default_branch", "main")
     languages = api(f"/repos/{owner}/{repo}/languages") or {}
-    wfs = api(f"/repos/{owner}/{repo}/actions/workflows")
-    runs = api(f"/repos/{owner}/{repo}/actions/runs",
-               {"per_page": 5, "branch": meta.get("default_branch", "main"), "status": "completed"})
+    wfs = api_retry(f"/repos/{owner}/{repo}/actions/workflows")
+    runs = api_retry(f"/repos/{owner}/{repo}/actions/runs", runs_query(branch))
     releases = api(f"/repos/{owner}/{repo}/releases", {"per_page": 1})
     tags = api(f"/repos/{owner}/{repo}/tags", {"per_page": 1})
     contributors = api(f"/repos/{owner}/{repo}/contributors", {"per_page": 100})
     readme = api(f"/repos/{owner}/{repo}/readme")
-    branch = meta.get("default_branch", "main")
-    tree = api(f"/repos/{owner}/{repo}/git/trees/{branch}", {"recursive": "1"})
+    tree = api_retry(f"/repos/{owner}/{repo}/git/trees/{branch}", {"recursive": "1"})
 
     wf_list = wfs.get("workflows", []) if isinstance(wfs, dict) else []
-    has_ci = len(wf_list) > 0
+    # GitHub always reports the implicit Dependabot and Pages pipelines. Those
+    # are not the project's own automation, so they must not earn the CI bonus.
+    has_ci = has_project_workflow(wf_list)
     latest_ok = False
     if isinstance(runs, dict):
-        run_list = runs.get("workflow_runs", [])
-        if run_list:
-            all_ok = all(r.get("conclusion") in ("success", None) for r in run_list)
-            latest_ok = run_list[0].get("conclusion") == "success" and all_ok
+        latest_ok = ci_is_green(
+            runs_for_default_branch(runs.get("workflow_runs", []), branch))
 
     has_release = is_ok(releases) and len(releases) > 0
     has_tags = is_ok(tags) and len(tags) > 0
@@ -152,12 +298,12 @@ def analyze(owner: str, repo: str) -> dict | None:
     # Entry points: conventional basenames at any depth, plus the well-known
     # conventional subpaths that are not literally called main/index.
     has_entry = any(is_entry_path(f) for f in lower)
-    has_tests = any(f.startswith(("test/", "tests/", "spec/", "__tests__/")) or
-                    "_test." in f or f.endswith((".test.js", ".test.ts", ".spec.js", ".spec.ts")) for f in lower)
+    has_tests = any(is_test_path(f) for f in lower)
     # Docker: iterate the repo's own file list. The previous version iterated a
     # hardcoded list of candidate *names*, so f.startswith(...) was testing the
     # candidate rather than the repo file and has_docker was always True.
     has_docker = any(is_docker_path(f) for f in lower)
+    lockfile = has_lockfile(lower)
 
     size_mb = (meta.get("size") or 0) / 1024.0
     stars = meta.get("stargazers_count") or 0
@@ -189,8 +335,11 @@ def analyze(owner: str, repo: str) -> dict | None:
     doc = min(doc, 15)
 
     # --- Code maturity (max 20)
+    # A lockfile proves an installable dependency graph, so it earns the same
+    # substance credit as a >=1 MB checkout. Small complete apps are not
+    # penalised for shipping less vendored weight than larger ones.
     code = 0
-    if size_mb >= 1.0:
+    if size_mb >= 1.0 or lockfile:
         code += 4
     if has_manifest:
         code += 6
@@ -198,7 +347,7 @@ def analyze(owner: str, repo: str) -> dict | None:
         code += 4
     if n_langs >= 2 or size_mb >= 10:
         code += 3
-    if n_files >= 50:
+    if n_files >= 20:
         code += 3
     code = min(code, 20)
 

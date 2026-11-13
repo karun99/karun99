@@ -4,7 +4,7 @@
 
 **Assistant Professor (Data Science & AI) · AI Systems Engineer · Multi-Agent Architect · Researcher**
 
-I build autonomous AI systems that think, plan, and act — and that can be independently **validated, published, and reproduced**.
+I build autonomous AI systems that think, plan, and act — and that can be independently **validated, published, and reproduced**. Increasingly, they run entirely on-device — down to a phone.
 
 [![Website](https://img.shields.io/badge/🌐-karun99.github.io-6366f1?style=for-the-badge)](https://karun99.github.io)
 [![MCP Servers](https://img.shields.io/badge/🔌-MCP%20Servers-22c55e?style=for-the-badge)](https://karun99.github.io/prompts-and-mcp.html)
@@ -13,7 +13,7 @@ I build autonomous AI systems that think, plan, and act — and that can be inde
 [![Email](https://img.shields.io/badge/📧-Email-ea4335?style=for-the-badge)](mailto:saikarun085@gmail.com)
 [![npm](https://img.shields.io/badge/📦-npm-cb3837?style=for-the-badge)](https://www.npmjs.com/package/@saikarun/s-ai)
 
-**44 public repositories · 13 projects at TRL 8 · 19 MCP servers indexed across Glama.ai & the M8ven Trust Index**
+**47 public repositories · 32 projects tracked on a live TRL scale · 19 MCP servers indexed across Glama.ai & the M8ven Trust Index**
 
 </div>
 
@@ -40,6 +40,7 @@ I build autonomous AI systems that think, plan, and act — and that can be inde
 
 - [GitHub in numbers](#-github-in-numbers)
 - [What I build](#-what-i-build)
+- [Celebrum on Android](#-celebrum-on-android)
 - [Tech stack](#-tech-stack)
 - [At a glance](#-at-a-glance)
 - [Flagship projects](#-flagship-projects)
@@ -56,6 +57,17 @@ I build autonomous AI systems that think, plan, and act — and that can be inde
 ## 🚀 What I build
 
 Autonomous AI systems — multi-agent swarms that collaborate on complex tasks, and execution engines that act on your behalf behind risk-rated approval gates. Every flagship project ships with **automated validation, transparent metrics, and a reproducible evaluation harness**, so the claims in this profile are reproducible from the code.
+
+### 📱 Celebrum on Android
+
+**Celebrum** — the local-first artificial brain — now installs as a one-command Android app through Termux. It runs in a private Python venv, adds a `celebrum-app` launcher and a home-screen widget, and can autostart on boot. The persona model, memory graph, truth engine, guardrails and dashboard all stay on the device.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/karun99/celebrum/main/install-termux.sh | bash
+celebrum-app
+```
+
+The dashboard opens at `http://127.0.0.1:8477`; `celebrum-app stop`, `status`, `logs -f` and `doctor` handle the rest. [Install guide](https://github.com/karun99/celebrum/blob/main/docs/TERMUX.md) · [Command reference](https://github.com/karun99/celebrum/blob/main/docs/COMMANDS.md)
 
 ### 🧰 Tech stack
 
@@ -78,14 +90,15 @@ Autonomous AI systems — multi-agent swarms that collaborate on complex tasks, 
 
 | | |
 |---|---|
-| **Public repositories** | 44 |
-| **Projects at TRL 8** (release-ready, fully validated) | 13 of 16 tracked |
+| **Public repositories** | 47 |
+| **Projects with verified TRL 8 qualification** | Pending full 32-project refresh |
 | **Live MCP servers** | 3 servers · 17 tools (stdio) |
 | **MCP servers indexed** | **19** submitted to [Glama.ai](https://glama.ai/mcp/servers?query=karun99) (2 live) · **19** scored on the [M8ven Trust Index](https://m8ven.ai/publisher/karun99) (4 live-verified, grade **B** · 89/100) |
 | **Repositories prepared for JOSS** | 6 |
-| **Current flagship** | **S-AI v6.1** — Synthetic Executive / Integrated OpenWorker |
+| **Mobile app** | **Celebrum on Android** — one-command Termux install, widget, boot autostart, notifications |
+| **Current flagship** | **Celebrum** — local-first artificial brain, now running on-device as a phone app |
 
-> Every number above is regenerated from live repository signals; the [TRL table](#-trl-tracker--live-project-maturity--efficiency) below updates automatically **every 6 hours**.
+> Repository metadata is refreshed by automation. The TRL tracker now covers all 32 portfolio projects; its published table below needs a full refresh before it can report qualification counts.
 
 ---
 
@@ -99,7 +112,7 @@ One project per row. **Stack**, whether it ships an **MCP** server, and its curr
 | [**s-ai**](https://github.com/karun99/s-ai) | **S-AI v5.1** — multi-agent swarm intelligence, MCP Builder, Skill Creator, neural mapping, 20+ providers | TypeScript | ✅ | 8 |
 | [**s-ai-soulbot**](https://github.com/karun99/s-ai-soulbot) | Consent-gated companion harness — Sentinel authorization, Jātaka guardrail registry, T0–T6 conformance tiers | TypeScript · React | ✅ | 8 |
 | [**samvit**](https://github.com/karun99/samvit) | Local-first personal AI — one memory graph, five profiles, VISION accuracy marker, 14-check validation | Python · SQLite | ✅ | 8 |
-| [**celebrum**](https://github.com/karun99/celebrum) | Local-first artificial brain — persona model + neuron/synapse memory graph + truth engine + guardrails | Python · SQLite | ✅ | 8 |
+| [**celebrum**](https://github.com/karun99/celebrum) | Local-first artificial brain — persona model + neuron/synapse memory graph + truth engine + guardrails, now a one-command Android/Termux app | Python · SQLite · Termux | ✅ | 8 |
 | [**neural-harness**](https://github.com/karun99/neural-harness) | Shared validation engine + JOSS editorial bot measuring information-handling & synthesis accuracy | Python | ✅ | 8 |
 | [**glama-mcp**](https://github.com/karun99/glama-mcp) | Dependency-free MCP server for the Glama OpenAI-compatible gateway (list, chat, stream, status) | Python · stdlib | ✅ | 8 |
 | [**zoe**](https://github.com/karun99/zoe) | **Project Zoe** — connectome-based reservoir-computing companion: 11 biologically-inspired layers, evolving LoRA, virtual avatar, sandboxed MicroVM, companion mode, and **Emoja**, its consented non-diagnostic reflection layer | Python | ✅ | 5 |
@@ -112,7 +125,7 @@ One project per row. **Stack**, whether it ships an **MCP** server, and its curr
 | [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | AI-enhanced M.Tech CSE learning hub — Teddy AI companion + persistent learner graph | HTML | — | 8 |
 | [**CodeQuest**](https://github.com/karun99/CodeQuest) | LAN-deployable coding/debugging assessment platform (anti-cheat, auto-scoring) | PHP · MySQL | — | 6 |
 
-Also on GitHub: [FRND4U](https://github.com/karun99/FRND4U) · [Duet — Digital Twin](https://github.com/karun99/Duet--Digital-Twin-Technology) · [techlearn](https://github.com/karun99/techlearn) · [QuestWrite](https://github.com/karun99/QuestWrite) · [ScholarSync](https://github.com/karun99/ScholarSync) · [plastic-waste-conservation](https://github.com/karun99/plastic-waste-conservation) — and the rest under [All repositories](#-all-repositories).
+Also on GitHub: [FRND4U](https://github.com/karun99/FRND4U) · [Duet — Digital Twin + MAS protocol](https://github.com/karun99/Duet--Digital-Twin-Technology) · [techlearn](https://github.com/karun99/techlearn) · [QuestWrite](https://github.com/karun99/QuestWrite) · [ScholarSync](https://github.com/karun99/ScholarSync) · [plastic-waste-conservation](https://github.com/karun99/plastic-waste-conservation) — and the rest under [All repositories](#-all-repositories).
 
 ---
 
@@ -151,6 +164,34 @@ Commands: `/card`, `/save`, `/drop`, `/pause`, `/resume`, `/ground`, `/crisis`, 
 | D4 interviews with neurodivergent users | ❌ Not started |
 
 Full spec: [**docs/EMOJA.md**](https://github.com/karun99/zoe/blob/main/docs/EMOJA.md) · honest per-directive table: [**docs/ENFORCEMENT.md**](https://github.com/karun99/zoe/blob/main/docs/ENFORCEMENT.md).
+
+---
+
+## 🎭 Duet — Digital Twin Technology
+
+**Duet is a private-by-design AI twin that runs in the browser and now carries an explicit MAS operating protocol — Six Hats, EMOJA, DUNCE, KUNDALINI and JATAKA — as a local policy layer, not a claim of server-side enforcement.**
+
+The protocol is applied before and after the model call:
+
+- **Six Hats** structures each turn (facts, risks, alternatives, intuition, benefits, synthesis).
+- **EMOJA** rewrites the final answer into a compact, non-diagnostic reflection card.
+- **DUNCE** maintains a local decision log of protocol events for audit.
+- **KUNDALINI** tracks the reasoning rung reached during a session.
+- **JATAKA** holds the reference guardrail registry used by the governor.
+
+**Honest trust boundary.** `KB-PRIMARY` blocks the model call when no ready knowledge-base node exists. Personal information is **off by default**; enabling it requires explicit consent, per-field approval, a local audit log, and local-only storage. `SITEMAP` and `INDEX` are declared-only modes; `REFRESH` is policy-only; G2 escalation routes to a human gate. None of these are presented as hard server-side guardrails.
+
+| Duet status | Reality |
+|---|---|
+| MAS modes, stage tracking, prompt builder, governor parsing | ✅ Implemented (`services/mas.ts`) |
+| KB-PRIMARY block before model call | ✅ Implemented (browser-local) |
+| PI consent, per-field approval, audit log, local-only storage | ✅ Implemented, **off by default** |
+| Six Hats prompting + EMOJA output rewrite | ✅ Implemented (prompt-level) |
+| DUNCE / audit log with JSON export | ✅ Implemented (local) |
+| Hard server-side guardrail enforcement | ❌ Not claimed — policy layer only |
+| Persistent cloud knowledge base | ❌ Not implemented — local only |
+
+Live: [**duet-digital-twin-technology.vercel.app**](https://duet-digital-twin-technology.vercel.app/) · [Hugging Face Space](https://saikarun-duet-digital-twin.static.hf.space) · Source: [**karun99/Duet--Digital-Twin-Technology**](https://github.com/karun99/Duet--Digital-Twin-Technology).
 
 ---
 
@@ -274,26 +315,44 @@ _Rows below are generated and **updated automatically every 6 hours** — badges
 
 ### Live project readiness
 
+The table below is the last published snapshot for the previous 16-project scope. The tracker configuration now covers all 32 projects and will replace this snapshot on its next successful run.
+
 <!-- TRL-TABLE -->
-_Last updated: 2026-10-17 02:36 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
+_Last updated: 2026-11-13 14:13 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
 | Project | TRL Level | Efficiency | Live Signals |
 |---------|-----------|------------|--------------|
+| 🚀 [**gemini-ai-chatbot**](https://github.com/karun99/gemini-ai-chatbot) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `85/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
+| 🚀 [**Duet--Digital-Twin-Technology**](https://github.com/karun99/Duet--Digital-Twin-Technology) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `82/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
 | 🚀 [**s-ai**](https://github.com/karun99/s-ai) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `82/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
 | 🚀 [**s-ai-update**](https://github.com/karun99/s-ai-update) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `82/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
 | 🚀 [**ai-content-studio**](https://github.com/karun99/ai-content-studio) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**aistudio**](https://github.com/karun99/aistudio) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**anvaya**](https://github.com/karun99/anvaya) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**appidea**](https://github.com/karun99/appidea) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**arthai**](https://github.com/karun99/arthai) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**autonomous-hackathon-agent**](https://github.com/karun99/autonomous-hackathon-agent) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**blogbot**](https://github.com/karun99/blogbot) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**buildbot**](https://github.com/karun99/buildbot) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**celebrum**](https://github.com/karun99/celebrum) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**CodeQuest**](https://github.com/karun99/CodeQuest) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**Collabuild**](https://github.com/karun99/Collabuild) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**FRND4U**](https://github.com/karun99/FRND4U) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**glama-mcp**](https://github.com/karun99/glama-mcp) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**health-quest**](https://github.com/karun99/health-quest) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 | 🚀 [**HelixDB**](https://github.com/karun99/HelixDB) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
-| ✅ [**glama-mcp**](https://github.com/karun99/glama-mcp) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
-| ✅ [**health-quest**](https://github.com/karun99/health-quest) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
-| ✅ [**neural-harness**](https://github.com/karun99/neural-harness) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
-| ✅ [**s-ai-soulbot**](https://github.com/karun99/s-ai-soulbot) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
-| ✅ [**samvit**](https://github.com/karun99/samvit) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
-| ✅ [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | ![TRL 6: Validated Working System](https://img.shields.io/badge/TRL%206-Validated%20Working%20System-eab308?style=flat-square) | `70/100` `███████░░░` | ❌ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 🛡️ License · ⚡ Active |
-| 🔗 [**zoe**](https://github.com/karun99/zoe) | ![TRL 5: Integrated Prototype](https://img.shields.io/badge/TRL%205-Integrated%20Prototype-eab308?style=flat-square) | `51/100` `█████░░░░░` | ❌ CI · 🧪 Tests · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**minibot**](https://github.com/karun99/minibot) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**neural-harness**](https://github.com/karun99/neural-harness) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**plastic-waste-conservation**](https://github.com/karun99/plastic-waste-conservation) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**prompt-code**](https://github.com/karun99/prompt-code) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**s-ai-soulbot**](https://github.com/karun99/s-ai-soulbot) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**samvit**](https://github.com/karun99/samvit) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**ScholarSync**](https://github.com/karun99/ScholarSync) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**SWOTIFY**](https://github.com/karun99/SWOTIFY) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**techlearn**](https://github.com/karun99/techlearn) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**tut-hub**](https://github.com/karun99/tut-hub) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**you-ai-engine**](https://github.com/karun99/you-ai-engine) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `80/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
+| 🚀 [**zoe**](https://github.com/karun99/zoe) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `79/100` `████████░░` | ✅ CI · 🧪 Tests · 📦 Release · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active |
 
 <sub>Efficiency 0–100 = live-weighted validation score. Docs & license · code/entry-point maturity · CI/CD, releases, Docker & live deployment · automated tests & green CI · stars, forks, contributors & age.</sub>
 <!-- /TRL-TABLE -->
@@ -312,9 +371,9 @@ Grouped by purpose. Links go to the live repository.
 | [s-ai](https://github.com/karun99/s-ai) | S-AI v5.1 — multi-agent swarm intelligence |
 | [s-ai-soulbot](https://github.com/karun99/s-ai-soulbot) | Consent-gated companion harness (T0–T6 conformance) |
 | [samvit](https://github.com/karun99/samvit) | Local-first personal AI — memory graph + guardrails |
-| [celebrum](https://github.com/karun99/celebrum) | Local-first artificial brain — persona + memory + truth engine |
+| [celebrum](https://github.com/karun99/celebrum) | Local-first artificial brain — persona + memory + truth engine, with a one-command Android/Termux app |
 | [FRND4U](https://github.com/karun99/FRND4U) | Private, keyless AI companion chat on free OpenRouter models |
-| [Duet--Digital-Twin-Technology](https://github.com/karun99/Duet--Digital-Twin-Technology) | Your AI twin in a browser — private by design |
+| [Duet--Digital-Twin-Technology](https://github.com/karun99/Duet--Digital-Twin-Technology) | Your AI twin in a browser — private by design, with a local MAS operating protocol (Six Hats, EMOJA, DUNCE, KUNDALINI, JATAKA) |
 | [gemini-ai-chatbot](https://github.com/karun99/gemini-ai-chatbot) | Gemini-powered chat application |
 | [you-ai-engine](https://github.com/karun99/you-ai-engine) | AI backend engine — auth, projects, content generation |
 | [autonomous-hackathon-agent](https://github.com/karun99/autonomous-hackathon-agent) | Autonomous agent for hackathon workflows |
@@ -355,7 +414,7 @@ Grouped by purpose. Links go to the live repository.
 
 [aistudio](https://github.com/karun99/aistudio) · [blogbot](https://github.com/karun99/blogbot) · [prompt-code](https://github.com/karun99/prompt-code) · [SWOTIFY](https://github.com/karun99/SWOTIFY) · [anvaya](https://github.com/karun99/anvaya) · [Arogya](https://github.com/karun99/Arogya) · [Arogya-Vedha-](https://github.com/karun99/Arogya-Vedha-) · [nrcm](https://github.com/karun99/nrcm) · [karun99.github.io](https://github.com/karun99/karun99.github.io) · [nskcsp.github.io](https://github.com/karun99/nskcsp.github.io) · [aios](https://github.com/karun99/aios) · [client](https://github.com/karun99/client) · [appidea](https://github.com/karun99/appidea) · [data](https://github.com/karun99/data) · [collabuild-1](https://github.com/karun99/collabuild-1)
 
-<sub>See all 43 repositories at [github.com/karun99?tab=repositories](https://github.com/karun99?tab=repositories).</sub>
+<sub>See all 47 repositories at [github.com/karun99?tab=repositories](https://github.com/karun99?tab=repositories).</sub>
 
 ---
 
@@ -365,16 +424,19 @@ Grouped by purpose. Links go to the live repository.
 |---|---|---|
 | Multi-agent systems (MAS) | TypeScript / Node.js (primary) | MCP — 3 live servers, 17 tools, 10 projects wired |
 | Autonomous execution + approval gates | Python / FastAPI | OpenRouter · Ollama · local LLMs |
-| Tool orchestration & risk assessment | React / Next.js | Edge AI (Raspberry Pi, ARM) |
+| Tool orchestration & risk assessment | React / Next.js | Edge AI (Android/Termux, Raspberry Pi, ARM) |
 | Knowledge graphs & memory systems | Docker / edge deployment | Zero-inference-cost architectures |
 
 ---
 
 ## 🎯 Current focus
 
-Building **S-AI v6.1** — a production-hardened **Artificial Mind** that runs as an **Integrated OpenWorker**. The swarm thinks *and* acts through risk-rated, policy-gated execution, while the OpenWorker harness (daemon, scheduled jobs, reach channels, encrypted vault) lets it work reliably on your own hardware. v6.1 adds security hardening (SSRF protection, sandboxing, auth, rate limiting) covered by CI (gitleaks, OSV-Scanner, govulncheck, Semgrep, npm audit).
+Shipping **Celebrum** — a local-first artificial brain that now installs as a one-command Android app. The persona model, neuron/synapse memory graph, truth engine and guardrails run entirely on-device, with a private venv, home-screen widget, notifications and optional boot autostart. No account, no cloud, no telemetry — the whole brain is one SQLite file.
+
+Also building **S-AI v6.1** — a production-hardened **Artificial Mind** that runs as an **Integrated OpenWorker**. The swarm thinks *and* acts through risk-rated, policy-gated execution, while the OpenWorker harness (daemon, scheduled jobs, reach channels, encrypted vault) lets it work reliably on your own hardware. v6.1 adds security hardening (SSRF protection, sandboxing, auth, rate limiting) covered by CI (gitleaks, OSV-Scanner, govulncheck, Semgrep, npm audit).
 
 **Next up:**
+- [ ] Celebrum backup/restore and multi-device memory sync
 - [ ] Voice interface for S-AI (speech-to-action)
 - [ ] Multi-device swarm coordination
 - [ ] Visual execution planner (drag-and-drop)
