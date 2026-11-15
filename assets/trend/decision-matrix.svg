@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" role="img" aria-label="Research trend-viability commit and pivot decision matrix">
+  <title>Research trend-viability commit and pivot decision matrix</title>
+  <rect width="960" height="470" rx="16" fill="#151824"/>
+  <text x="32" y="42" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#e6e9f2" text-anchor="start" opacity="1">Commit / Pivot Decision Matrix</text>
+  <text x="32" y="66" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#98a2c0" text-anchor="start" opacity="1">A direction has to clear every gate; one failed gate is enough to reframe.</text>
+  <rect x="40" y="100" width="124" height="40" fill="#1b1f2e" stroke="#2b3149"/>
+  <text x="54" y="126" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#98a2c0" text-anchor="start" opacity="1">Trend</text>
+  <rect x="164" y="100" width="124" height="40" fill="#1b1f2e" stroke="#2b3149"/>
+  <text x="178" y="126" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#98a2c0" text-anchor="start" opacity="1">Novelty</text>
+  <rect x="288" y="100" width="156" height="40" fill="#1b1f2e" stroke="#2b3149"/>
+  <text x="302" y="126" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#98a2c0" text-anchor="start" opacity="1">Real-time use</text>
+  <rect x="444" y="100" width="150" height="40" fill="#1b1f2e" stroke="#2b3149"/>
+  <text x="458" y="126" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#98a2c0" text-anchor="start" opacity="1">Robust core</text>
+  <rect x="594" y="100" width="326" height="40" fill="#1b1f2e" stroke="#2b3149"/>
+  <text x="608" y="126" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#98a2c0" text-anchor="start" opacity="1">Action</text>
+  <rect x="40" y="140" width="124" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="164" y="140" width="124" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="288" y="140" width="156" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="444" y="140" width="150" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="594" y="140" width="326" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <text x="54" y="165" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6e9f2" text-anchor="start" opacity="1">Rising</text>
+  <text x="226.0" y="165" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6e9f2" text-anchor="middle" opacity="1">Yes</text>
+  <text x="366.0" y="165" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6e9f2" text-anchor="middle" opacity="1">Yes</text>
+  <text x="519.0" y="165" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6e9f2" text-anchor="middle" opacity="1">Yes</text>
+  <text x="608" y="165" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#22c55e" text-anchor="start" opacity="1">Commit</text>
+  <text x="608" y="183" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#98a2c0" text-anchor="start" opacity="1">robust core separated from the trend rider</text>
+  <rect x="40" y="198" width="124" height="58" fill="#151824" stroke="#2b3149"/>
+  <rect x="164" y="198" width="124" height="58" fill="#151824" stroke="#2b3149"/>
+  <rect x="288" y="198" width="156" height="58" fill="#151824" stroke="#2b3149"/>
+  <rect x="444" y="198" width="150" height="58" fill="#151824" stroke="#2b3149"/>
+  <rect x="594" y="198" width="326" height="58" fill="#151824" stroke="#2b3149"/>
+  <text x="54" y="223" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6e9f2" text-anchor="start" opacity="1">Rising</text>
+  <text x="226.0" y="223" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6e9f2" text-anchor="middle" opacity="1">Yes</text>
+  <text x="366.0" y="223" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#98a2c0" text-anchor="middle" opacity="1">No</text>
+  <text x="519.0" y="223" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6e9f2" text-anchor="middle" opacity="1">Yes</text>
+  <text x="608" y="223" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#eab308" text-anchor="start" opacity="1">Commit with caution</text>
+  <text x="608" y="241" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#98a2c0" text-anchor="start" opacity="1">present-day use case still missing</text>
+  <rect x="40" y="256" width="124" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="164" y="256" width="124" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="288" y="256" width="156" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="444" y="256" width="150" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="594" y="256" width="326" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <text x="54" y="281" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6e9f2" text-anchor="start" opacity="1">Rising</text>
+  <text x="226.0" y="281" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#98a2c0" text-anchor="middle" opacity="1">No</text>
+  <text x="366.0" y="281" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#98a2c0" text-anchor="middle" opacity="1">—</text>
+  <text x="519.0" y="281" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#98a2c0" text-anchor="middle" opacity="1">—</text>
+  <text x="608" y="281" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#f7768e" text-anchor="start" opacity="1">Differentiate or stop</text>
+  <text x="608" y="299" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#98a2c0" text-anchor="start" opacity="1">the delta is too small to defend</text>
+  <rect x="40" y="314" width="124" height="58" fill="#151824" stroke="#2b3149"/>
+  <rect x="164" y="314" width="124" height="58" fill="#151824" stroke="#2b3149"/>
+  <rect x="288" y="314" width="156" height="58" fill="#151824" stroke="#2b3149"/>
+  <rect x="444" y="314" width="150" height="58" fill="#151824" stroke="#2b3149"/>
+  <rect x="594" y="314" width="326" height="58" fill="#151824" stroke="#2b3149"/>
+  <text x="54" y="339" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6e9f2" text-anchor="start" opacity="1">Peaking</text>
+  <text x="226.0" y="339" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#98a2c0" text-anchor="middle" opacity="1">—</text>
+  <text x="366.0" y="339" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#98a2c0" text-anchor="middle" opacity="1">—</text>
+  <text x="519.0" y="339" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#98a2c0" text-anchor="middle" opacity="1">—</text>
+  <text x="608" y="339" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#f7768e" text-anchor="start" opacity="1">Don’t start a 2-year project</text>
+  <text x="608" y="357" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#98a2c0" text-anchor="start" opacity="1">it publishes after the peak</text>
+  <rect x="40" y="372" width="124" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="164" y="372" width="124" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="288" y="372" width="156" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="444" y="372" width="150" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <rect x="594" y="372" width="326" height="58" fill="#1b1f2e" stroke="#2b3149"/>
+  <text x="54" y="397" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#e6e9f2" text-anchor="start" opacity="1">Declining</text>
+  <text x="226.0" y="397" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#98a2c0" text-anchor="middle" opacity="1">—</text>
+  <text x="366.0" y="397" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#98a2c0" text-anchor="middle" opacity="1">—</text>
+  <text x="519.0" y="397" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#98a2c0" text-anchor="middle" opacity="1">—</text>
+  <text x="608" y="397" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#f7768e" text-anchor="start" opacity="1">Stop / reframe</text>
+  <text x="608" y="415" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#98a2c0" text-anchor="start" opacity="1">salvage the core, retire the rider</text>
+  <text x="40" y="444" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#98a2c0" text-anchor="start" opacity="1">Gates 2 (novelty), 4 (real-time use) and 6 (trend-retention design) are the load-bearing ones.</text>
+
+</svg>
