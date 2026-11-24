@@ -404,7 +404,7 @@ _Rows below are generated and **updated automatically every 6 hours** — badges
 
 ### Live project readiness
 
-The table below is the last published snapshot for the previous 16-project scope. The tracker configuration now covers all 32 projects and will replace this snapshot on its next successful run.
+The table below reflects the live scoring run across all 32 tracked projects.
 
 <!-- TRL-TABLE -->
 _Last updated: 2026-11-23 17:07 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._

@@ -254,18 +254,21 @@ def runs_query(default_branch: str) -> dict:
 
 
 def analyze(owner: str, repo: str) -> dict | None:
-    meta = api(f"/repos/{owner}/{repo}")
+    meta = api_retry(f"/repos/{owner}/{repo}")
     if not isinstance(meta, dict) or "__http_error__" in meta or "full_name" not in meta:
         return None
 
     branch = meta.get("default_branch", "main")
-    languages = api(f"/repos/{owner}/{repo}/languages") or {}
+    # Every signal must survive a transient transport failure. A single flaky
+    # read used to look like a missing release/tag and silently dock 7 points
+    # from integration, turning a TRL 8 project into a TRL 7 one at random.
+    languages = api_retry(f"/repos/{owner}/{repo}/languages") or {}
     wfs = api_retry(f"/repos/{owner}/{repo}/actions/workflows")
     runs = api_retry(f"/repos/{owner}/{repo}/actions/runs", runs_query(branch))
-    releases = api(f"/repos/{owner}/{repo}/releases", {"per_page": 1})
-    tags = api(f"/repos/{owner}/{repo}/tags", {"per_page": 1})
-    contributors = api(f"/repos/{owner}/{repo}/contributors", {"per_page": 100})
-    readme = api(f"/repos/{owner}/{repo}/readme")
+    releases = api_retry(f"/repos/{owner}/{repo}/releases", {"per_page": 1})
+    tags = api_retry(f"/repos/{owner}/{repo}/tags", {"per_page": 1})
+    contributors = api_retry(f"/repos/{owner}/{repo}/contributors", {"per_page": 100})
+    readme = api_retry(f"/repos/{owner}/{repo}/readme")
     tree = api_retry(f"/repos/{owner}/{repo}/git/trees/{branch}", {"recursive": "1"})
 
     wf_list = wfs.get("workflows", []) if isinstance(wfs, dict) else []
