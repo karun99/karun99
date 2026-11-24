@@ -47,7 +47,7 @@ I build autonomous AI systems that think, plan, and act — and that can be inde
 - [MCP servers](#-mcp-servers)
 - [Research & open software](#-research--open-software)
 - [Research trend-viability](#-research-trend-viability)
-- [TRL readiness (live)](#-trl-tracker--live-project-maturity--efficiency)
+- [TRL readiness (live)](#trl-tracker)
 - [All repositories](#-all-repositories)
 - [Technical focus](#-technical-focus)
 - [Current focus](#-current-focus)
@@ -92,31 +92,31 @@ The dashboard opens at `http://127.0.0.1:8477`; `celebrum-app stop`, `status`, `
 | | |
 |---|---|
 | **Public repositories** | 47 |
-| **Projects with verified TRL 8 qualification** | Pending full 32-project refresh |
+| **Projects at TRL 8** | **32 / 32** · [live table](#trl-tracker) |
 | **Live MCP servers** | 3 servers · 17 tools (stdio) |
 | **MCP servers indexed** | **19** submitted to [Glama.ai](https://glama.ai/mcp/servers?query=karun99) (2 live) · **19** scored on the [M8ven Trust Index](https://m8ven.ai/publisher/karun99) (4 live-verified, grade **B** · 89/100) |
 | **Repositories prepared for JOSS** | 6 |
 | **Mobile app** | **Celebrum on Android** — one-command Termux install, widget, boot autostart, notifications |
 | **Current flagship** | **Celebrum** — local-first artificial brain, now running on-device as a phone app |
 
-> Repository metadata is refreshed by automation. The TRL tracker now covers all 32 portfolio projects; its published table below needs a full refresh before it can report qualification counts.
+> Repository metadata and TRL scores are refreshed by automation — see the [live TRL table](#trl-tracker) for current per-project evidence.
 
 ---
 
 ## 🧭 Flagship projects
 
-One project per row. **Stack**, whether it ships an **MCP** server, and its current **[TRL](#-trl-tracker--live-project-maturity--efficiency)** level.
+One project per row. **Stack**, whether it ships an **MCP** server, and its current **[TRL](#trl-tracker)** level (snapshot; the live table below is authoritative).
 
 | Project | What it is | Stack | MCP | TRL |
 |---|---|:--:|:--:|:--:|
-| [**s-ai-update**](https://github.com/karun99/s-ai-update) | **S-AI v6.1** — Synthetic Executive: policy-gated execution, security hardening (SSRF, sandboxing, auth, rate limiting), OpenWorker harness (daemon, jobs, vault, reach) | TypeScript | ✅ | 7 |
+| [**s-ai-update**](https://github.com/karun99/s-ai-update) | **S-AI v6.1** — Synthetic Executive: policy-gated execution, security hardening (SSRF, sandboxing, auth, rate limiting), OpenWorker harness (daemon, jobs, vault, reach) | TypeScript | ✅ | 8 |
 | [**s-ai**](https://github.com/karun99/s-ai) | **S-AI v5.1** — multi-agent swarm intelligence, MCP Builder, Skill Creator, neural mapping, 20+ providers | TypeScript | ✅ | 8 |
 | [**s-ai-soulbot**](https://github.com/karun99/s-ai-soulbot) | Consent-gated companion harness — Sentinel authorization, Jātaka guardrail registry, T0–T6 conformance tiers | TypeScript · React | ✅ | 8 |
 | [**samvit**](https://github.com/karun99/samvit) | Local-first personal AI — one memory graph, five profiles, VISION accuracy marker, 14-check validation | Python · SQLite | ✅ | 8 |
 | [**celebrum**](https://github.com/karun99/celebrum) | Local-first artificial brain — persona model + neuron/synapse memory graph + truth engine + guardrails, now a one-command Android/Termux app | Python · SQLite · Termux | ✅ | 8 |
 | [**neural-harness**](https://github.com/karun99/neural-harness) | Shared validation engine + JOSS editorial bot measuring information-handling & synthesis accuracy | Python | ✅ | 8 |
 | [**glama-mcp**](https://github.com/karun99/glama-mcp) | Dependency-free MCP server for the Glama OpenAI-compatible gateway (list, chat, stream, status) | Python · stdlib | ✅ | 8 |
-| [**zoe**](https://github.com/karun99/zoe) | **Project Zoe** — connectome-based reservoir-computing companion: 11 biologically-inspired layers, evolving LoRA, virtual avatar, sandboxed MicroVM, companion mode, and **Emoja**, its consented non-diagnostic reflection layer | Python | ✅ | 5 |
+| [**zoe**](https://github.com/karun99/zoe) | **Project Zoe** — connectome-based reservoir-computing companion: 11 biologically-inspired layers, evolving LoRA, virtual avatar, sandboxed MicroVM, companion mode, and **Emoja**, its consented non-diagnostic reflection layer | Python | ✅ | 8 |
 | [**Collabuild**](https://github.com/karun99/Collabuild) | Multi-agent pipeline: research paper → SRS → modules → code → deploy → README | Python · FastAPI | — | 8 |
 | [**buildbot**](https://github.com/karun99/buildbot) | Student AI coding assistant: research paper → SRS → checklist → working code | Python | — | 8 |
 | [**arthai**](https://github.com/karun99/arthai) | Agentic commerce gateway for MSMEs — 6-layer financial governance + adaptive security | Python | — | 8 |
@@ -124,7 +124,7 @@ One project per row. **Stack**, whether it ships an **MCP** server, and its curr
 | [**HelixDB**](https://github.com/karun99/HelixDB) | Research & learning companion tailored to each learner's approach | Python | — | 8 |
 | [**health-quest**](https://github.com/karun99/health-quest) | Ethics-first food-literacy game — transparent Health Score + real OSM eateries | HTML · Python | — | 8 |
 | [**teddy-techlearn**](https://github.com/karun99/teddy-techlearn) | AI-enhanced M.Tech CSE learning hub — Teddy AI companion + persistent learner graph | HTML | — | 8 |
-| [**CodeQuest**](https://github.com/karun99/CodeQuest) | LAN-deployable coding/debugging assessment platform (anti-cheat, auto-scoring) | PHP · MySQL | — | 6 |
+| [**CodeQuest**](https://github.com/karun99/CodeQuest) | LAN-deployable coding/debugging assessment platform (anti-cheat, auto-scoring) | PHP · MySQL | — | 8 |
 
 Also on GitHub: [FRND4U](https://github.com/karun99/FRND4U) · [Duet — Digital Twin + MAS protocol](https://github.com/karun99/Duet--Digital-Twin-Technology) · [techlearn](https://github.com/karun99/techlearn) · [QuestWrite](https://github.com/karun99/QuestWrite) · [ScholarSync](https://github.com/karun99/ScholarSync) · [plastic-waste-conservation](https://github.com/karun99/plastic-waste-conservation) — and the rest under [All repositories](#-all-repositories).
 
@@ -281,7 +281,7 @@ Every MCP server in this profile is submitted to **two independent registries**,
 
 Assistant Professor, Department of Data Science and Artificial Intelligence, **PB Siddhartha College of Arts and Science**. Research focus: **Agentic AI, multi-agent systems, digital twins, retrieval-augmented generation, and AI education**, with a second track in **biological-immunity-inspired adaptive security**.
 
-Six repositories are prepared for submission to the **Journal of Open Source Software (JOSS)**, each scoring **95/100** on the evidence-weighted *validation-readiness index* from the [neural-harness editorial bot](https://github.com/karun99/neural-harness/tree/main/scripts) — a documentation-and-validation readiness score, distinct from the 9-level [TRL](#-trl-tracker--live-project-maturity--efficiency) scale below:
+Six repositories are prepared for submission to the **Journal of Open Source Software (JOSS)**, each scoring **95/100** on the evidence-weighted *validation-readiness index* from the [neural-harness editorial bot](https://github.com/karun99/neural-harness/tree/main/scripts) — a documentation-and-validation readiness score, distinct from the 9-level [TRL](#trl-tracker) scale below:
 
 | Repository | Focus | Readiness |
 |---|---|---|
@@ -370,7 +370,7 @@ Pivot plan:     [e.g. "if MCP loses favour, reframe the core for <alternative>"]
   <img src="assets/trend/portfolio-domains.svg" alt="Horizontal bar chart of 32 tracked projects by top-level domain: EdTech 9, AI infrastructure 7, Agentic AI 5, research systems 4, developer tools 2, companion AI 2, AI apps 1, digital twin 1, MAS 1" width="900" />
 </p>
 
-<p align="center"><sub><b>Portfolio mix — 32 tracked projects</b>, counted from the same <code>tools/projects.json</code> registry that feeds the <a href="#-trl-tracker--live-project-maturity--efficiency">TRL table</a>. This is where my trend exposure actually sits: nine EdTech projects and seven infrastructure ones, with the research and agentic work a smaller, more defensible share. <i>As of 2026-11-15.</i></sub></p>
+<p align="center"><sub><b>Portfolio mix — 32 tracked projects</b>, counted from the site's <code>tools/projects.json</code> registry — the same 32-project scope as the <a href="#trl-tracker">TRL table</a>. This is where my trend exposure actually sits: nine EdTech projects and seven infrastructure ones, with the research and agentic work a smaller, more defensible share. <i>As of 2026-11-15.</i></sub></p>
 
 <p align="center">
   <img src="assets/trend/research-outputs.svg" alt="Horizontal bar chart of published output: 31 books, 19 MCP servers, 47 public repositories, 32 tracked projects and 9 research papers" width="900" />
@@ -383,6 +383,8 @@ Pivot plan:     [e.g. "if MCP loses favour, reframe the core for <alternative>"]
 Use this as a **gate, not a guarantee**. It reduces trend-fragility; it cannot predict breakthroughs. A checklist that says "no" to a genuinely new idea is a checklist you are allowed to overrule — in writing, with reasons, recorded next to the project.
 
 ---
+
+<a id="trl-tracker"></a>
 
 ## 🛰️ TRL Tracker — Live Project Maturity & Efficiency
 
