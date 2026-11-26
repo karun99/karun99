@@ -409,7 +409,7 @@ _Rows below are generated and **updated automatically every 6 hours** — badges
 The table below reflects the live scoring run across all 32 tracked projects.
 
 <!-- TRL-TABLE -->
-_Last updated: 2026-11-26 01:28 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
+_Last updated: 2026-11-26 16:14 UTC · recomputed automatically every 6 hours by the [TRL Tracker action](.github/workflows/trl-tracker.yml)._
 | Project | TRL Level | Efficiency | Live Signals |
 |---------|-----------|------------|--------------|
 | 🚀 [**gemini-ai-chatbot**](https://github.com/karun99/gemini-ai-chatbot) | ![TRL 8: Complete, Tested System](https://img.shields.io/badge/TRL%208-Complete%2C%20Tested%20System-22c55e?style=flat-square) | `85/100` `████████░░` | ✅ CI · 🧪 Tests · 🐳 Docker · 🌐 Demo · 📄 Docs · 🛡️ License · ⚡ Active · 👥 Team |
